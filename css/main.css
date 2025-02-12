@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #161118;
+  font-family: "Noto Sans KR", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+/*header styles*/
+header {
+  width: 100vw;
+  font-weight: 800;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: flow-root;
+  margin: 0px auto;
+  background-color: transparent;
+  position: absolute;
+  top: 0px;
+  z-index: 2;
+}
+nav {
+  float: left;
+}
+
+#logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 20px;
+  float: left;
+}
+/* Dropdown Button */
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+.dropbtn {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  padding: 30px 60px;
+  margin-right: 20px;
+  font-family: "Noto Sans KR", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #CEB7CB;
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  background-color: #3E3045;
+  font-family: "Noto Sans KR", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  min-width: 173px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #CEB7CB;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #CEB7CB;
+  color: #3E3045;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  text-decoration: underline;
+  color: #FFD137;
+}
+#title-container {
+  positon: absolute;
+  margin-top: auto;
+  position: absolute;
+  top: 580px;
+  left: 100px;
+}
+h1 {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 200;
+  font-size: 120px;
+  color: #CEB7CB;
+  margin: 0px auto;
+  padding: 0px;
+}
+h2 {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 100;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #CEB7CB;
+  opacity: 30%;
+  margin: 0px auto;
+  padding: 0px;
+}
+h3 {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 100;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #CEB7CB;
+  margin: 0px auto;
+  padding: 0px;
+}
+#home-my-name {
+  font-size: 100px;
+  position: absolute;
+  top: -43px;
+  right: 45px;
+}
+#company-name {
+  position: absolute;
+  top: -17px;
+  right: 30px;
+}
+#my-name {
+  position: absolute;
+  top: 249px;
+  right: -135px;
+  transform: rotate(90deg);
+  /* Safari */
+  -webkit-transform: rotate(90deg);
+  /* Firefox */
+  -moz-transform: rotate(90deg);
+  /* IE */
+  -ms-transform: rotate(90deg);
+  /* Opera */
+  -o-transform: rotate(90deg);
+}
+#gmu-title {
+  position: absolute;
+  top: 150px;
+  left: -46px;
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+}
+#classwork-title {
+  position: absolute;
+  top: 260px;
+  left: -150px;
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
