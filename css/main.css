@@ -174,6 +174,38 @@ h3 {
   -o-transform: rotate(-90deg);
 }
 
+
+
+
+/*BUTTON COLLAPSIBLE*/
+.collapsible {
+  background-color: #3E3045;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  margin-left: 200px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+#collapsible-top {
+  margin-top: 135px;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #CEB7CB;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
