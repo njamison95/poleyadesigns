@@ -193,8 +193,7 @@ h4 {
   --xy-padding: 14px;
   --border-radius: 6px;
 
-  max-width: 1500px;
-  min-width: 800px;
+  max-width: 80%;
   margin: 1em 0;
   font-family: "Noto Sans KR", serif;
   font-weight: 400;
