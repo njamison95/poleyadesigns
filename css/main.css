@@ -104,17 +104,16 @@ h1 {
 h2 {
   font-family: "Noto Sans KR", serif;
   font-weight: 100;
-  font-size: 40px;
+  font-size: 60px;
   text-transform: uppercase;
   color: #CEB7CB;
-  opacity: 30%;
   margin: 0px auto;
   padding: 0px;
 }
 h3 {
   font-family: "Noto Sans KR", serif;
   font-weight: 100;
-  font-size: 60px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #CEB7CB;
   margin: 0px auto;
@@ -128,6 +127,11 @@ h4 {
   margin-right: 40px;
   float: right;
 }
+h5 {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 200;
+  font-size: 30px;
+}
 #home-my-name {
   font-size: 100px;
   position: absolute;
@@ -136,27 +140,8 @@ h4 {
 }
 #company-name {
   position: absolute;
-  top: -17px;
-  right: 30px;
-}
-#my-name {
-  position: absolute;
-  top: 249px;
-  right: -135px;
-  transform: rotate(90deg);
-  /* Safari */
-  -webkit-transform: rotate(90deg);
-  /* Firefox */
-  -moz-transform: rotate(90deg);
-  /* IE */
-  -ms-transform: rotate(90deg);
-  /* Opera */
-  -o-transform: rotate(90deg);
-}
-#gmu-title {
-  position: absolute;
-  top: 150px;
-  left: -46px;
+  top: 400px;
+  left: -275px;
   transform: rotate(-90deg);
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -166,6 +151,19 @@ h4 {
   -ms-transform: rotate(-90deg);
   /* Opera */
   -o-transform: rotate(-90deg);
+}
+#my-name {
+  font-size: 16px;
+  float: right;
+  font-weight: 400;
+  position: absolute;
+  top: 30px;
+  right: 60px;
+}
+#gmu-title {
+  position: absolute;
+  top: 150px;
+  left: -46px;
 }
 #classwork-title {
   position: absolute;
@@ -182,13 +180,7 @@ h4 {
   -o-transform: rotate(-90deg);
 }
 
-
-
-
-
-
-
-
+/*GMU*/
 .expandable {
   --xy-padding: 14px;
   --border-radius: 6px;
@@ -235,18 +227,6 @@ h4 {
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s ease-out;
 }*/
-
-
-
-
-
-
-
-
-
-
-
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -282,10 +262,37 @@ h4 {
   object-position: center;
 }
 
-
-
-
-
+/*CLASSWORK*/
+.section-wrapper {
+  max-width: 800px;
+  margin-top: 200px;
+  margin-left: 45vw;
+  margin-right: 50px;
+}
+.year-wrapper {
+  width: 30%;
+  float: left;
+    float: left;
+  margin-bottom: 60px;
+}
+.list-wrapper {
+  width: 70%;
+  float: left;
+  margin-bottom: 60px;
+}
+.year {
+  margin: 0px;
+  float: left;
+  color: #CEB7CB;
+}
+ul {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 100;
+  font-size: 30px;
+  color: #CEB7CB;
+  margin: 0px;
+  line-height: 2;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
