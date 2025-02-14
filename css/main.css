@@ -200,12 +200,12 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   color: #CEB7CB;
-  margin-top: 135px;
+  margin-top: 30px;
   margin-left: 165px;
 }
-.expandable-open .expandable-content-wrapper {
+/*.expandable-open .expandable-content-wrapper {
   grid-template-rows: 1fr;
-}
+}*/
 .expandable-title-bar {
   display: flex;
   align-items: center;
@@ -231,11 +231,11 @@ h4 {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   overflow: hidden;
 }
-.expandable-content-wrapper {
+/*.expandable-content-wrapper {
   display: grid;
   grid-template-rows: 0fr;
   transition: grid-template-rows 0.3s ease-out;
-}
+}*/
 
 
 
