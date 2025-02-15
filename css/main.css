@@ -49,6 +49,7 @@ nav {
   font-style: normal;
   letter-spacing: 1px;
   color: #CEB7CB;
+
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -123,7 +124,7 @@ h4 {
   font-family: "Noto Sans KR", serif;
   font-weight: 200;
   font-size: 30px;
-  margin-top: 7vh;
+  margin-top: 60px;
   margin-right: 40px;
   float: right;
 }
@@ -132,12 +133,12 @@ h5 {
   font-weight: 200;
   font-size: 30px;
 }
-#home-my-name {
+/*#home-my-name {
   font-size: 100px;
   position: absolute;
   top: -43px;
   right: 45px;
-}
+}*/
 #company-name {
   position: absolute;
   top: 400px;
@@ -182,7 +183,7 @@ h5 {
 
 /*GMU*/
 .expandable {
-  --xy-padding: 14px;
+  --xy-padding: 20px 40px;
   --border-radius: 6px;
 
   max-width: 80%;
@@ -191,8 +192,8 @@ h5 {
   font-weight: 400;
   font-size: 16px;
   color: #CEB7CB;
-  margin-top: 30px;
-  margin-left: 165px;
+  margin-top: 115px;
+  margin-left: 200px;
 }
 /*.expandable-open .expandable-content-wrapper {
   grid-template-rows: 1fr;
@@ -264,24 +265,24 @@ h5 {
 
 /*CLASSWORK*/
 .section-wrapper {
-  max-width: 800px;
+  max-width: 850px;
   margin-top: 200px;
-  margin-left: 45vw;
+  margin-left: 43vw;
   margin-right: 50px;
 }
 .year-wrapper {
-  width: 30%;
+  width: 25%;
   float: left;
-    float: left;
   margin-bottom: 60px;
 }
 .list-wrapper {
-  width: 70%;
+  width: 75%;
   float: left;
   margin-bottom: 60px;
 }
 .year {
   margin: 0px;
+  margin-top: 10px;
   float: left;
   color: #CEB7CB;
 }
@@ -293,6 +294,72 @@ ul {
   margin: 0px;
   line-height: 2;
 }
+
+/*PSEUDO CLASSES*/
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #CEB7CB;
+}
+/* visited link */
+a:visited {
+  color: #CEB7CB;
+}
+/* mouse over link */
+a:hover {
+  color: #ffd137;
+}
+/* selected link */
+a:active {
+  color: #a443b3;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1098px) {
+  .expandable {
+    margin-left: 150px;
+  }
+  .section-wrapper {
+    margin-left: 200px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .list-wrapper {
+    width: 100%;
+  }
+  .year {
+    margin-bottom: 0px;
+  }
+  h4 {
+  margin-top: 120px;
+  margin-right: 40px;
+  float: right;
+  }
+}
+@media screen and (max-width: 715px) {
+  #company-name {
+    opacity: 0%;
+  }
+  .section-wrapper {
+    margin-left: 50px;
+  }
+  .expandable {
+    margin-left: 50px;
+  }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  ul {
+    font-size: 24px;
+  }
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
