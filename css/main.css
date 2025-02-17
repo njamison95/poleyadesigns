@@ -302,7 +302,7 @@ ul {
   line-height: 2;
 }
 
-/*CARDS*/
+/*TYPE CLASS CARDS*/
 .grid-wrapper {
   max-width: 80%;
   margin-left: 200px;
@@ -319,7 +319,8 @@ ul {
   object-fit: contain;
   object-position: center;
 }
-.bib-wrapper, .menu-wrapper, .redirect-wrapper {
+/*OTHER*/
+.bib-wrapper, .menu-wrapper, .redirect-wrapper, .moth-wrapper {
   max-width: 80%;
   margin-left: 200px;
 }
@@ -331,7 +332,10 @@ ul {
   width: 100%;
   margin-bottom: 30px;
 }
-
+.moth-wrapper img {
+  width: 100%;
+  margin-bottom: 30px;
+}
 
 /*PSEUDO CLASSES*/
 a {
