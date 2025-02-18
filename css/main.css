@@ -337,6 +337,17 @@ ul {
   margin-bottom: 30px;
 }
 
+/*SOCIAL MEDIA*/
+.sm-grid-wrapper {
+  max-width: 80%;
+  margin-left: 200px;
+  margin-right: 50px;
+}
+.sm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2%;
+}
 /*PSEUDO CLASSES*/
 a {
   text-decoration: none;
