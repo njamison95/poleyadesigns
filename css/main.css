@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  cursor: url("images/cursor.png") auto;
 }
 body {
   margin: 0;
@@ -8,11 +7,8 @@ body {
   font-family: "Noto Sans KR", serif;
   font-weight: 300;
   font-style: normal;
-  cursor: url("images/cursor.png") auto;
 }
-main {
-    cursor: url("images/cursor.png") auto;
-}
+
 /*header styles*/
 header {
   width: 100vw;
@@ -21,8 +17,8 @@ header {
   text-transform: uppercase;
   display: flow-root;
   margin: 0px auto;
-  background-color: transparent;
-  position: absolute;
+  background-color: #161118;
+  position: fixed;
   top: 0px;
   z-index: 2;
 }
@@ -116,6 +112,19 @@ nav {
   left: 100px;
 /*  background-color: red;*/
 }
+.title {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 15px #CEB7CB;
+  }
+  
+  to {
+    text-shadow: 0 0 15px #3e3045;
+  }
+}
+
 h1 {
   font-family: "Noto Sans KR", serif;
   font-weight: 200;
@@ -182,6 +191,7 @@ h5 {
   position: absolute;
   top: 30px;
   right: 60px;
+  z-index: 3;
 }
 #gmu-title {
   position: absolute;
