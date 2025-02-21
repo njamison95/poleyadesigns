@@ -87,12 +87,23 @@ nav {
   text-decoration: underline;
   color: #FFD137;
 }
+
+.glowing-butterfly {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 600px;
+  left: 1200px;
+  z-index: 2;
+  transform: rotate(-20deg);
+}
 #title-container {
   positon: absolute;
   margin-top: auto;
   position: absolute;
   top: 580px;
   left: 100px;
+/*  background-color: red;*/
 }
 h1 {
   font-family: "Noto Sans KR", serif;
@@ -370,6 +381,13 @@ a:active {
 }
 
 /*MEDIA QUERIES*/
+@media screen and (max-width: 1253px) {
+  .glowing-butterfly {
+    position: absolute;
+    top: 775px;
+    left: 465px;
+  }
+}
 @media screen and (max-width: 1098px) {
   .expandable {
     margin-left: 150px;
@@ -395,6 +413,13 @@ a:active {
 @media screen and (max-width: 833px) {
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 810px) {
+  .glowing-butterfly {
+    position: absolute;
+    top: 595px;
+    left: 460px;
   }
 }
 @media screen and (max-width: 715px) {
