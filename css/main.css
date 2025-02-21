@@ -8,6 +8,10 @@ body {
   font-weight: 300;
   font-style: normal;
 }
+body, html {
+  cursor: url("images/cursor.png") auto;
+}
+
 /*header styles*/
 header {
   width: 100vw;
@@ -87,7 +91,13 @@ nav {
   text-decoration: underline;
   color: #FFD137;
 }
-
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: red;
+  border-radius: 50%;
+}
 .glowing-butterfly {
   width: 100px;
   height: auto;
