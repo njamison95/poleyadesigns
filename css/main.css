@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  cursor: url("images/cursor.png") auto;
 }
 body {
   margin: 0;
@@ -7,11 +8,11 @@ body {
   font-family: "Noto Sans KR", serif;
   font-weight: 300;
   font-style: normal;
-}
-body, html {
   cursor: url("images/cursor.png") auto;
 }
-
+main {
+    cursor: url("images/cursor.png") auto;
+}
 /*header styles*/
 header {
   width: 100vw;
@@ -389,7 +390,9 @@ a:hover {
 a:active {
   color: #a443b3;
 }
-
+/*#logo:hover {
+  opacity: 0%;
+}*/
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1253px) {
   .glowing-butterfly {
@@ -455,7 +458,16 @@ a:active {
     margin-left: 50px;
   }
 }
-
+@media screen and (max-width: 500px) {
+  #title-container {
+    left: 30px;
+  }
+  .glowing-butterfly {
+    position: absolute;
+    top: 567px;
+    left: 210px;
+  }
+}
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
