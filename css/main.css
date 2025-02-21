@@ -183,6 +183,7 @@ h5 {
   -ms-transform: rotate(-90deg);
   /* Opera */
   -o-transform: rotate(-90deg);
+  animation: glow 2s ease-in-out infinite alternate;
 }
 #my-name {
   font-size: 16px;
