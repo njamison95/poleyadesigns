@@ -64,8 +64,15 @@ nav {
   letter-spacing: 1px;
   min-width: 173px;
   z-index: 1;
+
+  transform: translateY(-10px);
+  transition: opacity 150ms ease-in-out;
 }
 
+.dropbtn > .link:focus + .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+}
 /* Links inside the dropdown */
 .dropdown-content a {
   color: #CEB7CB;
@@ -103,6 +110,17 @@ nav {
   left: 1200px;
   z-index: 2;
   transform: rotate(-20deg);
+
+  animation-name: glowing-butterfly;
+  animation-duration: 2s;
+}
+@keyframes glowing-butterfly {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 #title-container {
   positon: absolute;
@@ -113,8 +131,11 @@ nav {
 /*  background-color: red;*/
 }
 .title {
-  animation: glow 2s ease-in-out infinite alternate;
+  animation-name: title;
+  animation-duration: 1s;
 }
+/*  animation: glow 2s ease-in-out infinite alternate;
+  }
 @-webkit-keyframes glow {
   from {
     text-shadow: 0 0 15px #CEB7CB;
@@ -122,6 +143,17 @@ nav {
   
   to {
     text-shadow: 0 0 15px #3e3045;
+  }
+}
+*/
+@keyframes title {
+  0% { 
+    transform: translate3d(0, 100%, 0);
+    opacity: 0%; 
+  }
+  100% { 
+    transform: translate3d(0, 0, 0);
+    opacity: 100%; 
   }
 }
 
@@ -183,7 +215,7 @@ h5 {
   -ms-transform: rotate(-90deg);
   /* Opera */
   -o-transform: rotate(-90deg);
-  animation: glow 2s ease-in-out infinite alternate;
+/*  animation: glow 2s ease-in-out infinite alternate;*/
 }
 #my-name {
   font-size: 16px;
@@ -325,6 +357,19 @@ h5 {
   margin-top: 10px;
   float: left;
   color: #CEB7CB;
+
+  animation-name: year;
+  animation-duration: 1s;
+}
+@keyframes year {
+  0% { 
+    transform: translate3d(0, 100%, 0);
+    opacity: 0%; 
+  }
+  100% { 
+    transform: translate3d(0, 0, 0);
+    opacity: 100%; 
+  }
 }
 ul {
   font-family: "Noto Sans KR", serif;
@@ -385,7 +430,6 @@ ul {
 a {
   text-decoration: none;
 }
-
 a:link {
   color: #CEB7CB;
 }
@@ -483,3 +527,27 @@ a:active {
 ::-webkit-scrollbar {
   width: 0px;
 }
+
+
+/*.spin {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+
+  animation-name: spin;
+  animation-duration: 3s;
+}
+@keyframes spin {
+  0% {
+
+  }
+  50% {
+    scale: 2;
+    transform: rotate(0); /*makes the square grow and then rotate*/
+/*    border-radius: 0; *//*makes the square grow and then rotate*/
+  }
+/*  100% {
+    transform: rotate(360deg);
+    border-radius: 50%;*/
+  }
+}/*
