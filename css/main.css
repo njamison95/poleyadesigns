@@ -3,7 +3,7 @@
 }
 body {
   margin: 0;
-  background-color: #161118;
+  background-color: #2C2230;
   font-family: "Noto Sans KR", serif;
   font-weight: 300;
   font-style: normal;
@@ -17,10 +17,10 @@ header {
   text-transform: uppercase;
   display: flow-root;
   margin: 0px auto;
-  background-color: #161118;
+  background-color: #2C2230;
   position: fixed;
   top: 0px;
-  z-index: 2;
+  z-index: 3;
 }
 nav {
   float: left;
@@ -106,7 +106,7 @@ nav {
   width: 100px;
   height: auto;
   position: absolute;
-  top: 600px;
+  top: 290px;
   left: 1200px;
   z-index: 2;
   transform: rotate(-20deg);
@@ -126,7 +126,7 @@ nav {
   positon: absolute;
   margin-top: auto;
   position: absolute;
-  top: 580px;
+  top: 280px;
   left: 100px;
 /*  background-color: red;*/
 }
@@ -157,6 +157,41 @@ nav {
   }
 }
 
+.bg {
+  width: 100vw;
+  height: 900px;
+  background-color: #3e3045;
+  position: relative;
+  margin-top: 730px;
+  bottom: 0px;
+  z-index: -1;
+}
+#about-me {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 200;
+  font-size: 70px;
+  color: #CEB7CB;
+  position: absolute;
+  top: 370px;
+  left: 0px;
+  transform: rotate(-90deg);
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+  /* IE */
+  -ms-transform: rotate(-90deg);
+  /* Opera */
+  -o-transform: rotate(-90deg);
+}
+#about-me-text {
+  position: relative;
+  top: 230px;
+  max-width: 650px;
+  margin-left: 43vw;
+  margin-right: 50px;
+/*  background-color: red;*/
+}
 h1 {
   font-family: "Noto Sans KR", serif;
   font-weight: 200;
@@ -184,7 +219,7 @@ h3 {
 }
 h4 {
   font-family: "Noto Sans KR", serif;
-  font-weight: 200;
+  font-weight: 350;
   font-size: 30px;
   margin-top: 60px;
   margin-right: 40px;
@@ -192,16 +227,17 @@ h4 {
 }
 h5 {
   font-family: "Noto Sans KR", serif;
-  font-weight: 200;
+  font-weight: 350;
   font-size: 30px;
   color: #CEB7CB;
 }
-/*#home-my-name {
-  font-size: 100px;
-  position: absolute;
-  top: -43px;
-  right: 45px;
-}*/
+p {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 350;
+  font-size: 30px;
+  line-height: 2;
+  color: #CEB7CB;
+}
 #company-name {
   position: absolute;
   top: 400px;
@@ -253,6 +289,7 @@ h5 {
 .sub-page-label {
   margin-bottom: 60px;
 }
+
 /*GMU*/
 .expandable {
   --xy-padding: 20px 40px;
@@ -373,7 +410,7 @@ h5 {
 }
 ul {
   font-family: "Noto Sans KR", serif;
-  font-weight: 100;
+  font-weight: 350;
   font-size: 30px;
   color: #CEB7CB;
   margin: 0px;
@@ -452,8 +489,18 @@ a:active {
 @media screen and (max-width: 1253px) {
   .glowing-butterfly {
     position: absolute;
-    top: 775px;
+    top: 470px;
     left: 465px;
+  }
+  #about-me-text {
+    position: relative;
+    top: 230px;
+    max-width: 650px;
+    margin-left: 350px;
+    margin-right: 50px;
+  }
+  p {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 1098px) {
@@ -486,11 +533,33 @@ a:active {
 @media screen and (max-width: 810px) {
   .glowing-butterfly {
     position: absolute;
-    top: 595px;
+    top: 640px;
     left: 460px;
+  }
+  .bg {
+    position: relative;
+    margin-top: 930px;
+    bottom: 0px;
+    z-index: -1;
   }
 }
 @media screen and (max-width: 715px) {
+  #about-me {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: none;
+  }
+  #about-me-text {
+    position: relative;
+    top: 230px;
+    max-width: 650px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  p {
+    font-size: 20px;
+  }
   #company-name {
     opacity: 0%;
   }
@@ -519,7 +588,7 @@ a:active {
   }
   .glowing-butterfly {
     position: absolute;
-    top: 567px;
+    top: 260px;
     left: 210px;
   }
 }
