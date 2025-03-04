@@ -116,9 +116,11 @@ nav {
 }
 @keyframes glowing-butterfly {
   0% {
+    transform: translate3d(0, 100%, 0);
     opacity: 0%;
   }
   100% {
+    transform: translate3d(0, 0, 0);
     opacity: 100%;
   }
 }
@@ -162,7 +164,7 @@ nav {
   height: 900px;
   background-color: #3e3045;
   position: relative;
-  margin-top: 730px;
+  margin-top: 830px;
   bottom: 0px;
   z-index: -1;
 }
@@ -191,6 +193,57 @@ nav {
   margin-left: 43vw;
   margin-right: 50px;
 /*  background-color: red;*/
+}
+
+/*MARQUEES*/
+.carousel {
+  --width: 100vw;
+  --height: 400px;
+  position: absolute;
+  top: 700px;
+  overflow: hidden;
+  border: 1px solid darkred;
+}
+.list {
+  display: flex;
+}
+.carousel-item {
+  width: var(--width);
+  height: var(--height);
+  animation: autoRun 10s linear infinite;
+}
+.carousel-item img {
+  width: auto;
+  height: 100%;
+}
+/*.marquee {
+  background-color: darkred;
+  position: relative;
+  top: 750px;
+  behavior: scroll;
+  direction: left;
+  width: 100vw;
+  height: 400px;
+  overflow: hidden;
+  animation: marquee 10s linear infinite;
+}
+/*.track {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 10s linear infinite;
+}*/
+
+/*@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}*/*/
+
+.marquee-img {
+  height: 400px;
+  width: auto;
 }
 h1 {
   font-family: "Noto Sans KR", serif;
