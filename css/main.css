@@ -106,8 +106,8 @@ nav {
   width: 100px;
   height: auto;
   position: absolute;
-  top: 290px;
-  left: 1200px;
+  top: 300px;
+  left: 1255px;
   z-index: 2;
   transform: rotate(-20deg);
 
@@ -116,38 +116,29 @@ nav {
 }
 @keyframes glowing-butterfly {
   0% {
-    transform: translate3d(0, 100%, 0);
     opacity: 0%;
   }
   100% {
-    transform: translate3d(0, 0, 0);
     opacity: 100%;
   }
+}
+.title-bg {
+  width: 100vw;
+  height: 700px;
+  background-color: #2C2230;
 }
 #title-container {
   positon: absolute;
   margin-top: auto;
   position: absolute;
   top: 280px;
-  left: 100px;
+  left: 150px;
 /*  background-color: red;*/
 }
 .title {
   animation-name: title;
   animation-duration: 1s;
 }
-/*  animation: glow 2s ease-in-out infinite alternate;
-  }
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 15px #CEB7CB;
-  }
-  
-  to {
-    text-shadow: 0 0 15px #3e3045;
-  }
-}
-*/
 @keyframes title {
   0% { 
     transform: translate3d(0, 100%, 0);
@@ -158,15 +149,15 @@ nav {
     opacity: 100%; 
   }
 }
-
-.bg {
+.skills-bg {
+  width: 100vw;
+  height: 300px;
+  background-color: #3E3045;
+}
+.about-me-bg {
   width: 100vw;
   height: 900px;
-  background-color: #3e3045;
-  position: relative;
-  margin-top: 830px;
-  bottom: 0px;
-  z-index: -1;
+  background-color: #2C2230;
 }
 #about-me {
   font-family: "Noto Sans KR", serif;
@@ -174,8 +165,8 @@ nav {
   font-size: 70px;
   color: #CEB7CB;
   position: absolute;
-  top: 370px;
-  left: 0px;
+  top: 1250px;
+  left: 20px;
   transform: rotate(-90deg);
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -188,62 +179,11 @@ nav {
 }
 #about-me-text {
   position: relative;
-  top: 230px;
+  top: 80px;
   max-width: 650px;
   margin-left: 43vw;
   margin-right: 50px;
 /*  background-color: red;*/
-}
-
-/*MARQUEES*/
-.carousel {
-  --width: 100vw;
-  --height: 400px;
-  position: absolute;
-  top: 700px;
-  overflow: hidden;
-  border: 1px solid darkred;
-}
-.list {
-  display: flex;
-}
-.carousel-item {
-  width: var(--width);
-  height: var(--height);
-  animation: autoRun 10s linear infinite;
-}
-.carousel-item img {
-  width: auto;
-  height: 100%;
-}
-/*.marquee {
-  background-color: darkred;
-  position: relative;
-  top: 750px;
-  behavior: scroll;
-  direction: left;
-  width: 100vw;
-  height: 400px;
-  overflow: hidden;
-  animation: marquee 10s linear infinite;
-}
-/*.track {
-  width: 100vw;
-  overflow: hidden;
-  position: relative;
-  white-space: nowrap;
-  will-change: transform;
-  animation: marquee 10s linear infinite;
-}*/
-
-/*@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}*/*/
-
-.marquee-img {
-  height: 400px;
-  width: auto;
 }
 h1 {
   font-family: "Noto Sans KR", serif;
@@ -539,21 +479,23 @@ a:active {
   opacity: 0%;
 }*/
 /*MEDIA QUERIES*/
-@media screen and (max-width: 1253px) {
+@media screen and (max-width: 1303px) {
   .glowing-butterfly {
     position: absolute;
     top: 470px;
-    left: 465px;
+    left: 510px;
+  }
+  .title-bg {
+    height: 870px;
+  }
+  #about-me {
+    top: 1400px;
   }
   #about-me-text {
-    position: relative;
-    top: 230px;
-    max-width: 650px;
-    margin-left: 350px;
     margin-right: 50px;
   }
   p {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 @media screen and (max-width: 1098px) {
@@ -583,11 +525,11 @@ a:active {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 860px) {
   .glowing-butterfly {
     position: absolute;
-    top: 640px;
-    left: 460px;
+    top: 260px;
+    left: 330px;
   }
   .bg {
     position: relative;
@@ -597,18 +539,22 @@ a:active {
   }
 }
 @media screen and (max-width: 715px) {
-  #about-me {
+  #title-container {
+    left: 30px;
+  }
+  .glowing-butterfly {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 260px;
+    left: 210px;
+  }
+  #about-me {
     transform: none;
+    top: 1200px;
+    left: 30px;
   }
   #about-me-text {
-    position: relative;
-    top: 230px;
-    max-width: 650px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
+    top: 150px;
   }
   p {
     font-size: 20px;
@@ -636,14 +582,7 @@ a:active {
   }
 }
 @media screen and (max-width: 500px) {
-  #title-container {
-    left: 30px;
-  }
-  .glowing-butterfly {
-    position: absolute;
-    top: 260px;
-    left: 210px;
-  }
+
 }
 /* width */
 ::-webkit-scrollbar {
