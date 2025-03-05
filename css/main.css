@@ -156,14 +156,14 @@ nav {
 }
 .skills-wrapper {
 /*  background-color: blue;*/
-  max-width: 1200px;
+  max-width: 1500px;
   height: 150px;
   margin-left: 150px;
   padding-top: 50px;
 }
 .skills-container {
   height: 100%;
-  width: 350px;
+  width: 300px;
 /*  background-color: red;*/
   float: left;
 }
@@ -176,7 +176,7 @@ nav {
   height: 90px;
 }
 #html-icon {
-  height: 60px;
+  height: 50px;
 }
 .icon-desc {
   font-size: 25px;
@@ -193,7 +193,7 @@ nav {
   font-size: 58px;
   color: #CEB7CB;
   position: absolute;
-  top: 1070px;
+  top: 1050px;
   left: 20px;
   transform: rotate(-90deg);
   /* Safari */
@@ -507,6 +507,10 @@ a:active {
   opacity: 0%;
 }*/
 /*MEDIA QUERIES*/
+@media screen and (max-width: 1350px) {
+  .skills-container {
+    width: 260px;
+  }
 @media screen and (max-width: 1303px) {
   .glowing-butterfly {
     position: absolute;
@@ -516,11 +520,35 @@ a:active {
   .title-bg {
     height: 780px;
   }
+  .skills-bg {
+    height: 200px;
+  }
+  .skills-wrapper {
+/*    background-color: blue;*/
+    padding-top: 40px;
+  }
   .skills-container {
-    width: 300px;
+    height: 100%;
+    width: 200px;
+/*    background-color: red;*/
+    float: left;
+  }
+  .icon-container {
+    height: 60px;
+    width: 100%;
+/*    background-color: green;*/
+  }
+  .website-icon {
+    height: 60px;
+  }
+  #html-icon {
+    height: 40px;
+  }
+  .icon-desc {
+    font-size: 20px;
   }
   #about-me {
-    top: 1250px;
+    top: 1180px;
   }
   #about-me-text {
     margin-right: 50px;
@@ -548,34 +576,17 @@ a:active {
     float: right;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 949px) {
   .skills-bg {
-    height: 200px;
+    height: 370px;
   }
   .skills-wrapper {
 /*    background-color: blue;*/
+    width: 400px;
     height: 200px;
-    padding-top: 40px;
   }
-  .skills-container {
-    height: 100%;
-    width: 200px;
-/*    background-color: red;*/
-    float: left;
-  }
-  .icon-container {
-    height: 60px;
-    width: 100%;
-/*    background-color: green;*/
-  }
-  .website-icon {
-    height: 60px;
-  }
-  #html-icon {
-    height: 40px;
-  }
-  .icon-desc {
-    font-size: 20px;
+    #about-me {
+    top: 1350px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -588,17 +599,12 @@ a:active {
     height: 880px;
   }
   #about-me {
-    top: 1300px;
+    top: 1450px;
   }
 }
 @media screen and (max-width: 833px) {
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media screen and (max-width: 750px) {
-  .skills-container {
-    width: 170px;
   }
 }
 @media screen and (max-width: 715px) {
@@ -612,16 +618,14 @@ a:active {
   }
   .skills-wrapper {
 /*    background-color: blue;*/
-    height: 200px;
-    padding-top: 40px;
-    margin-left: 60px;
+    margin-left: 70px;
   }
   .skills-container {
     width: 200px;
   }
   #about-me {
     transform: none;
-    top: 1130px;
+    top: 1300px;
     left: 30px;
   }
   #about-me-text {
@@ -651,15 +655,6 @@ a:active {
   }
   .grid-wrapper, .label-wrapper, .bib-wrapper, .moth-wrapper {
     margin-left: 50px;
-  }
-}
-  
-@media screen and (max-width: 649px) {
-  .skills-bg {
-    height: 400px;
-  }
-  #about-me {
-    top: 1330px;
   }
 }
 
