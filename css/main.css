@@ -7,7 +7,6 @@ body {
   font-family: "Noto Sans KR", serif;
   font-weight: 300;
   font-style: normal;
-  overflow: hidden;
 }
 
 /*header styles*/
@@ -507,7 +506,7 @@ a:active {
 /*#logo:hover {
   opacity: 0%;
 }*/
-
+/*MEDIA QUERIES*/
 @media screen and (max-width: 1303px) {
   .glowing-butterfly {
     position: absolute;
@@ -657,7 +656,7 @@ a:active {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0px;
+  display: none;
 }
 
 
