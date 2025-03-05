@@ -507,11 +507,7 @@ a:active {
 /*#logo:hover {
   opacity: 0%;
 }*/
-/*MEDIA QUERIES*/
-@media screen and (max-width: 1350px) {
-  .skills-container {
-    width: 260px;
-  }
+
 @media screen and (max-width: 1303px) {
   .glowing-butterfly {
     position: absolute;
@@ -661,7 +657,7 @@ a:active {
 
 /* width */
 ::-webkit-scrollbar {
-  display: none;
+  width: 0px;
 }
 
 
