@@ -124,7 +124,7 @@ nav {
 }
 .title-bg {
   width: 100vw;
-  height: 700px;
+  height: 600px;
   background-color: #2C2230;
 }
 #title-container {
@@ -151,21 +151,49 @@ nav {
 }
 .skills-bg {
   width: 100vw;
-  height: 300px;
+  height: 250px;
   background-color: #3E3045;
+}
+.skills-wrapper {
+/*  background-color: blue;*/
+  max-width: 1200px;
+  height: 150px;
+  margin-left: 150px;
+  padding-top: 50px;
+}
+.skills-container {
+  height: 100%;
+  width: 350px;
+/*  background-color: red;*/
+  float: left;
+}
+.icon-container {
+  height: 90px;
+  width: 100%;
+/*  background-color: green;*/
+}
+.website-icon {
+  height: 90px;
+}
+#html-icon {
+  height: 60px;
+}
+.icon-desc {
+  font-size: 25px;
+  line-height: 1.3;
 }
 .about-me-bg {
   width: 100vw;
-  height: 900px;
+  height: 550px;
   background-color: #2C2230;
 }
 #about-me {
   font-family: "Noto Sans KR", serif;
   font-weight: 200;
-  font-size: 70px;
+  font-size: 58px;
   color: #CEB7CB;
   position: absolute;
-  top: 1250px;
+  top: 1070px;
   left: 20px;
   transform: rotate(-90deg);
   /* Safari */
@@ -227,7 +255,7 @@ h5 {
 p {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 2;
   color: #CEB7CB;
 }
@@ -486,16 +514,16 @@ a:active {
     left: 510px;
   }
   .title-bg {
-    height: 870px;
+    height: 780px;
+  }
+  .skills-container {
+    width: 300px;
   }
   #about-me {
-    top: 1400px;
+    top: 1250px;
   }
   #about-me-text {
     margin-right: 50px;
-  }
-  p {
-    font-size: 25px;
   }
 }
 @media screen and (max-width: 1098px) {
@@ -515,14 +543,39 @@ a:active {
     margin-bottom: 0px;
   }
   h4 {
-  margin-top: 120px;
-  margin-right: 40px;
-  float: right;
+    margin-top: 120px;
+    margin-right: 40px;
+    float: right;
   }
 }
-@media screen and (max-width: 833px) {
-  .card-grid {
-    grid-template-columns: repeat(1, 1fr);
+@media screen and (max-width: 1050px) {
+  .skills-bg {
+    height: 200px;
+  }
+  .skills-wrapper {
+/*    background-color: blue;*/
+    height: 200px;
+    padding-top: 40px;
+  }
+  .skills-container {
+    height: 100%;
+    width: 200px;
+/*    background-color: red;*/
+    float: left;
+  }
+  .icon-container {
+    height: 60px;
+    width: 100%;
+/*    background-color: green;*/
+  }
+  .website-icon {
+    height: 60px;
+  }
+  #html-icon {
+    height: 40px;
+  }
+  .icon-desc {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -531,11 +584,21 @@ a:active {
     top: 260px;
     left: 330px;
   }
-  .bg {
-    position: relative;
-    margin-top: 930px;
-    bottom: 0px;
-    z-index: -1;
+  .title-bg {
+    height: 880px;
+  }
+  #about-me {
+    top: 1300px;
+  }
+}
+@media screen and (max-width: 833px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .skills-container {
+    width: 170px;
   }
 }
 @media screen and (max-width: 715px) {
@@ -547,9 +610,18 @@ a:active {
     top: 260px;
     left: 210px;
   }
+  .skills-wrapper {
+/*    background-color: blue;*/
+    height: 200px;
+    padding-top: 40px;
+    margin-left: 60px;
+  }
+  .skills-container {
+    width: 200px;
+  }
   #about-me {
     transform: none;
-    top: 1200px;
+    top: 1130px;
     left: 30px;
   }
   #about-me-text {
@@ -581,9 +653,16 @@ a:active {
     margin-left: 50px;
   }
 }
-@media screen and (max-width: 500px) {
-
+  
+@media screen and (max-width: 649px) {
+  .skills-bg {
+    height: 400px;
+  }
+  #about-me {
+    top: 1330px;
+  }
 }
+
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
