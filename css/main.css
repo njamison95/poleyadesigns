@@ -205,7 +205,7 @@ nav {
   max-width: 650px;
   margin-left: 43vw;
   margin-right: 50px;
-/*  background-color: red;*/
+  background-color: red;
 }
 h1 {
   font-family: "Noto Sans KR", serif;
@@ -308,7 +308,7 @@ p {
 /*LOGOS*/
 .logo-bg {
   width: 100%;
-  height: 700px;
+  height: 900px;
   background-color: blue;
   background-image: url("../images/logos/neko-bg.png");
 }
@@ -320,16 +320,36 @@ p {
 .logo-container {
 /*  background-color: greenyellow;*/
   height: auto;
-  width: 700px;
+  width: 850px;
   margin-top: 180px;
-  margin-left: 200px;
+  margin-left: 400px;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 .logo-container img {
   height: auto;
   width: 100%;
+}
+.game-link {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  position: absolute;
+/*  background-color: red;*/
+  font-weight: 500;
+  transition: 0.4s;
+}
+.game-desc {
+  position: relative;
+  top: 520px;
+  max-width: 700px;
+  margin-left: 470px;
+  margin-right: 50px;
+/*  background-color: red;*/
+}
+.game-desc p {
+  font-size: 20px;
+  font-weight: 400;
+  color: floralwhite;
 }
 /*GMU*/
 .expandable {
@@ -529,6 +549,16 @@ a:hover {
 /* selected link */
 a:active {
   color: #a443b3;
+}
+.game-desc a {
+  color: floralwhite;
+  text-decoration: underline;
+}
+.game-desc a:hover {
+  color: #ffd137;
+}
+.game-link:hover {
+  color: #ffd137;
 }
 /*#logo:hover {
   opacity: 0%;
