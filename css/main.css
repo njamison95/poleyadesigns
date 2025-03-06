@@ -306,12 +306,21 @@ p {
   margin-bottom: 60px;
 }
 /*LOGOS*/
+.logo-bg {
+  width: 1200px;
+  height: auto;
+  background-color: blue;
+}
 .logo-container {
   background-color: greenyellow;
-  height: 300px;
-  width: auto;
+  height: auto;
+  width: 800px;
   margin-top: 115px;
   margin-left: 200px;
+}
+.logo-container img {
+  height: auto;
+  width: 100%;
 }
 /*GMU*/
 .expandable {
