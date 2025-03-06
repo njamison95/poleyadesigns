@@ -307,16 +307,25 @@ p {
 }
 /*LOGOS*/
 .logo-bg {
-  width: 1200px;
-  height: auto;
+  width: 100%;
+  height: 700px;
   background-color: blue;
+  background-image: url("../images/logos/neko-bg.png");
+}
+.logo-bg img {
+  width: 100%;
+  height: 900px;
+
 }
 .logo-container {
-  background-color: greenyellow;
+/*  background-color: greenyellow;*/
   height: auto;
-  width: 800px;
-  margin-top: 115px;
+  width: 700px;
+  margin-top: 180px;
   margin-left: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .logo-container img {
   height: auto;
