@@ -230,7 +230,7 @@ h3 {
   font-weight: 100;
   font-size: 40px;
   color: #CEB7CB;
-  margin: 0px auto;
+  margin: opx auto;
   padding: 0px;
 }
 h4 {
@@ -278,25 +278,7 @@ p {
   right: 60px;
   z-index: 3;
 }
-#gmu-title {
-  position: absolute;
-  top: 150px;
-  left: -46px;
-}
-#classwork-title {
-  position: absolute;
-  top: 260px;
-  left: -150px;
-  transform: rotate(-90deg);
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg);
-}
+
 .label-wrapper {
   margin-top: 115px;
   margin-left: 200px;
@@ -392,16 +374,22 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   width: 1500px;
   margin-left: 200px;
-  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
-.social-image-cont img {
+.new-image-cont img {
   width: 100%;
   display: block;
   aspect-ratio: 4/5;
   object-fit: cover;
 }
 
+.square-image-cont img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
 
 /*CLASSWORK*/
 .section-wrapper {
