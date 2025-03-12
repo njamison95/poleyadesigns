@@ -3,7 +3,7 @@
 }
 body {
   margin: 0;
-  background-color: #161118;
+  background-color: #211924;
   font-family: "Noto Sans KR", serif;
   font-weight: 300;
   font-style: normal;
@@ -30,7 +30,6 @@ nav {
   height: 80px;
   margin-left: 20px;
   float: left;
-  opacity: 0%;
 }
 #logo-2 {
   width: 80px;
@@ -65,7 +64,7 @@ nav {
   font-size: 16px;
   display: none;
   position: absolute;
-  background-color: #3E3045;
+  background-color: #c19ce4;
   font-family: "Noto Sans KR", serif;
   font-weight: 400;
   font-style: normal;
@@ -97,7 +96,84 @@ nav {
   text-decoration: underline;
   color: #FFD137;
 }
-.cursor {
+
+
+/*SLIDESHOW*/
+.slider_container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.slider {
+  position: relative;
+  width: 400%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
+}
+.slide {
+  position: relative;
+  min-width: 100%;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: auto;
+}
+.slide.one {
+  background: rgb(182, 19, 109);
+}
+.slide.two {
+  background: rgb(255, 64, 64);
+}
+.slide.three {
+  background: rgb(11, 173, 188);
+}
+.slide.four {
+  background: rgb(11, 188, 14);
+}
+.slide.five {
+  background: rgb(173, 11, 188);
+}
+@keyframes sliding {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(-400%);
+  }
+}
+
+
+/*.cursor {
   width: 30px;
   height: 30px;
   border: none;
@@ -123,11 +199,11 @@ nav {
   100% {
     opacity: 100%;
   }
-}
+}*/
 .title-bg {
   width: 100vw;
   height: 600px;
-  background-color: #161118;
+  background-color: #28242B;
 }
 #title-container {
   positon: absolute;
@@ -158,7 +234,7 @@ nav {
 }
 .skills-bg {
   height: 200px;
-  width: 950px;
+/*  width: 950px;*/
   background-color: #211924;
 }
 .skills-wrapper {
@@ -189,7 +265,7 @@ nav {
 .about-me-bg {
   width: 100vw;
   height: 550px;
-  background-color: #161118;
+  background-color: #28242B;
 }
 #about-me {
   font-family: "Noto Sans KR", serif;
@@ -197,7 +273,7 @@ nav {
   font-size: 58px;
   color: #CEB7CB;
   position: absolute;
-  top: 1050px;
+  top: 1020px;
   left: 20px;
   transform: rotate(-90deg);
   /* Safari */
@@ -221,7 +297,7 @@ h1 {
   font-family: "Noto Sans KR", serif;
   font-weight: 200;
   font-size: 200px;
-  color: #CEB7CB;
+  color: #C69FD1;
   margin: 0px auto;
   padding: 0px;
   transition: 0.4s;
@@ -231,7 +307,7 @@ h2 {
   font-weight: 100;
   font-size: 60px;
   text-transform: uppercase;
-  color: #CEB7CB;
+  color: #EBDEF7;
   margin: 0px auto;
   padding: 0px;
 }
@@ -239,7 +315,7 @@ h3 {
   font-family: "Noto Sans KR", serif;
   font-weight: 100;
   font-size: 40px;
-  color: #CEB7CB;
+  color: #EBDEF7;
   margin: opx auto;
   padding: 0px;
 }
@@ -255,14 +331,14 @@ h5 {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
   font-size: 30px;
-  color: #CEB7CB;
+  color: #EBDEF7;
 }
 p {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
   font-size: 25px;
   line-height: 2;
-  color: #CEB7CB;
+  color: #EBDEF7;
 }
 #company-name {
   position: absolute;
@@ -281,7 +357,7 @@ p {
 }
 #my-name {
   font-size: 16px;
-  float: right;
+  float: left;
   font-weight: 400;
   position: absolute;
   top: 30px;
@@ -543,9 +619,6 @@ a:active {
     top: 470px;
     left: 510px;
   }
-  #about-me {
-    top: 1180px;
-  }
   #about-me-text {
     margin-right: 50px;
   }
@@ -573,9 +646,6 @@ a:active {
   }
 }
 @media screen and (max-width: 949px) {
-  #logo {
-    opacity: 100%;
-  }
   .skills-bg {
     height: 370px;
   }
@@ -584,8 +654,8 @@ a:active {
     width: 400px;
     height: 200px;
   }
-    #about-me {
-    top: 1350px;
+  #about-me {
+    top: 1190px;
   }
 }
 @media screen and (max-width: 860px) {
@@ -593,9 +663,6 @@ a:active {
     position: absolute;
     top: 260px;
     left: 330px;
-  }
-  #about-me {
-    top: 1450px;
   }
 }
 @media screen and (max-width: 833px) {
@@ -621,7 +688,7 @@ a:active {
   }
   #about-me {
     transform: none;
-    top: 1300px;
+    top: 1000px;
     left: 30px;
   }
   #about-me-text {
@@ -653,7 +720,20 @@ a:active {
     margin-left: 50px;
   }
 }
-
+@media screen and (max-width: 618px) {
+  #title-container {
+    top: 300px;
+  }
+  h1 {
+    font-size: 120px;
+  }
+  #designs {
+    font-size: 105px;
+  }
+  #logo-2 {
+    opacity: 0%;
+  }
+}
 /* width */
 ::-webkit-scrollbar {
   display: none;
