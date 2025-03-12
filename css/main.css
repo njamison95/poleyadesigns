@@ -102,7 +102,8 @@ nav {
 .slider_container {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 60vw;
+  max-height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,22 +209,21 @@ nav {
   height: 600px;
   background-color: #28242B;
 }
-#title-container {
+/*#title-container {
   positon: absolute;
   margin-top: auto;
   position: absolute;
-  top: 150px;
-  left: 150px;
-  width: 650px;
-/*  background-color: red;*/
-}
-#designs {
-  font-size: 160px;
-}
+  top: 300px;
+  width: 1200px;
+  background-color: red;
+}*/
 .title {
   animation-name: title;
   animation-duration: 1s;
   line-height: 1;
+  position: absolute;
+  top: 300px;
+  left: 24vw;
 }
 @keyframes title {
   0% { 
@@ -299,11 +299,10 @@ nav {
 h1 {
   font-family: "Noto Sans KR", serif;
   font-weight: 200;
-  font-size: 200px;
+  font-size: 8vw;
   color: #C69FD1;
   margin: 0px auto;
   padding: 0px;
-  transition: 0.4s;
 }
 h2 {
   font-family: "Noto Sans KR", serif;
@@ -614,8 +613,7 @@ a:active {
   opacity: 0%;
 }*/
 /*MEDIA QUERIES*/
-@media screen and (max-width: 1360px) {
-}
+
 @media screen and (max-width: 1303px) {
   .glowing-butterfly {
     position: absolute;
@@ -624,6 +622,11 @@ a:active {
   }
   #about-me-text {
     margin-right: 50px;
+  }
+}
+@media screen and (max-width: 1154px) {
+  .title {
+    top: 26vw;
   }
 }
 @media screen and (max-width: 1098px) {
@@ -674,9 +677,6 @@ a:active {
   }
 }
 @media screen and (max-width: 715px) {
-  #title-container {
-    left: 30px;
-  }
   .glowing-butterfly {
     position: absolute;
     top: 260px;
@@ -724,12 +724,6 @@ a:active {
   }
 }
 @media screen and (max-width: 618px) {
-  #title-container {
-    top: 300px;
-  }
-  h1 {
-    font-size: 120px;
-  }
   #designs {
     font-size: 105px;
   }
