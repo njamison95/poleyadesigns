@@ -337,7 +337,7 @@ p {
   margin: 0px;
   margin-top: 10px;
   float: left;
-  color: #CEB7CB;
+  color: #DCB6D7;
 
   animation-name: year;
   animation-duration: 1s;
@@ -356,7 +356,7 @@ ul {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
   font-size: 20px;
-  color: #CEB7CB;
+  color: #DCB6D7;
   margin: 0px;
   line-height: 2;
 }
