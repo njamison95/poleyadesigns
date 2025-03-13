@@ -149,14 +149,6 @@ h2 {
   margin: 0px auto;
   padding: 0px;
 }
-h3 {
-  font-family: "Noto Sans KR", serif;
-  font-weight: 100;
-  font-size: 40px;
-  color: #DCB6D7;
-  margin: opx auto;
-  padding: 0px;
-}
 h4 {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
@@ -207,6 +199,12 @@ p {
   margin-top: 115px;
   margin-left: 200px;
   margin-bottom: 0px;
+  width: 500px;
+  float: left;
+}
+#projects-title {
+  margin-top: 0;
+  width: 200px;
 }
 .sub-page-label {
   margin-bottom: 60px;
@@ -357,7 +355,7 @@ p {
 ul {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
-  font-size: 25px;
+  font-size: 20px;
   color: #CEB7CB;
   margin: 0px;
   line-height: 2;
@@ -512,7 +510,7 @@ a:active {
     margin-top: 20px;
   }
   ul {
-    font-size: 24px;
+    font-size: 18px;
   }
   .grid-wrapper, .label-wrapper, .bib-wrapper, .moth-wrapper {
     margin-left: 50px;
@@ -524,6 +522,15 @@ a:active {
   }
   .left {
     padding-right: none;
+  }
+  #about-me {
+    font-size: 30px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .icon-desc {
+    font-size: 16px;
   }
 }
 
