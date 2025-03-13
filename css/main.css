@@ -3,7 +3,7 @@
 }
 body {
   margin: 0;
-  background-color: #211924;
+  background-color: #2C2130;
   font-family: "Noto Sans KR", serif;
   font-weight: 300;
   font-style: normal;
@@ -31,14 +31,6 @@ nav {
   margin-left: 20px;
   float: left;
 }
-#logo-2 {
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 90px;
-  left: 135px;
-  z-index: 2;
-}
 /* Dropdown Button */
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -56,7 +48,7 @@ nav {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
-  color: #CEB7CB;
+  color: #DCB6D7;
   transition: 0.4s;
 }
 /* Dropdown Content (Hidden by Default) */
@@ -64,7 +56,7 @@ nav {
   font-size: 16px;
   display: none;
   position: absolute;
-  background-color: #c19ce4;
+  background-color: #2C2130;
   font-family: "Noto Sans KR", serif;
   font-weight: 400;
   font-style: normal;
@@ -84,7 +76,7 @@ nav {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #CEB7CB;
+  background-color: #DCB6D7;
   color: #3E3045;
 }
 
@@ -97,149 +89,13 @@ nav {
   color: #FFD137;
 }
 
-
-/*SLIDESHOW*/
-/*.slider_container {
-  position: relative;
-  width: 100%;
-  height: 60vw;
-  max-height: 650px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.slider {
-  position: relative;
-  width: 400%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  animation: 30s cubic-bezier(1, 0.95, 0.565, 1) sliding infinite;
-}
-.slide {
-  position: relative;
-  min-width: 100%;
-  height: 100%;
-}
-.slide img {
-  width: 100%;
-  height: auto;
-}
-.slide.one {
-  background: rgb(182, 19, 109);
-}
-#bib-slider {
-  position: top -50px;
-}
-.slide.two {
-  background: rgb(255, 64, 64);
-}
-.slide.three {
-  background: rgb(11, 173, 188);
-}
-.slide.four {
-  background: rgb(11, 188, 14);
-}
-.slide.five {
-  background: rgb(173, 11, 188);
-}
-@keyframes sliding {
-  0% {
-    transform: translateX(0%);
-  }
-  20% {
-    transform: translateX(0%);
-  }
-  25% {
-    transform: translateX(-100%);
-  }
-  45% {
-    transform: translateX(-100%);
-  }
-  50% {
-    transform: translateX(-200%);
-  }
-  70% {
-    transform: translateX(-200%);
-  }
-  75% {
-    transform: translateX(-300%);
-  }
-  95% {
-    transform: translateX(-300%);
-  }
-  100% {
-    transform: translateX(-400%);
-  }
-}*/
-
-
-/*.cursor {
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: red;
-  border-radius: 50%;
-}
-.glowing-butterfly {
-  width: 100px;
-  height: auto;
-  position: absolute;
-  top: 300px;
-  left: 1255px;
-  z-index: 2;
-  transform: rotate(-20deg);
-
-  animation-name: glowing-butterfly;
-  animation-duration: 2s;
-}
-@keyframes glowing-butterfly {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
-}*/
-.title-bg {
+.gif-container {
   width: 100vw;
-  height: 600px;
-  background-color: #28242B;
-  overflow: hidden;
 }
-/*#title-container {
-  positon: absolute;
-  margin-top: auto;
-  position: absolute;
-  top: 300px;
-  width: 1200px;
-  background-color: red;
-}*/
-.title-bg img {
-  background-image: cover;
-  overflow: hidden;
+.gif-container img {
+  width: 100vw;
 }
-.title {
-  animation-name: title;
-  animation-duration: 1s;
-  line-height: 1;
-  position: absolute;
-  top: 300px;
-  left: 24vw;
-}
-@keyframes title {
-  0% { 
-    transform: translate3d(0, 100%, 0);
-    opacity: 0%; 
-  }
-  100% { 
-    transform: translate3d(0, 0, 0);
-    opacity: 100%; 
-  }
-}
+
 .skills-bg {
   height: 200px;
 /*  width: 950px;*/
@@ -273,17 +129,21 @@ nav {
 }
 .about-me-bg {
   width: 100vw;
-  height: 550px;
+  height: 500px;
   background-color: #211924;
+}
+.about-me-container {
+  width: 70%;
+  height: 100%;
+  margin: 0px auto;
+  background-color: red;
 }
 #about-me {
   font-family: "Noto Sans KR", serif;
   font-weight: 200;
   font-size: 58px;
-  color: #CEB7CB;
-  position: absolute;
-  top: 1020px;
-  left: 20px;
+  color: #DCB6D7;
+  background-color: blue;
   transform: rotate(-90deg);
   /* Safari */
   -webkit-transform: rotate(-90deg);
@@ -293,29 +153,21 @@ nav {
   -ms-transform: rotate(-90deg);
   /* Opera */
   -o-transform: rotate(-90deg);
+
 }
 #about-me-text {
+  width: 70%;
+  background-color: green;
   position: relative;
-  top: 80px;
-  max-width: 650px;
-  margin-left: 43vw;
-  margin-right: 50px;
+
 /*  background-color: red;*/
-}
-h1 {
-  font-family: "Noto Sans KR", serif;
-  font-weight: 200;
-  font-size: 8vw;
-  color: #C69FD1;
-  margin: 0px auto;
-  padding: 0px;
 }
 h2 {
   font-family: "Noto Sans KR", serif;
   font-weight: 100;
   font-size: 60px;
   text-transform: uppercase;
-  color: #EBDEF7;
+  color:#DCB6D7;
   margin: 0px auto;
   padding: 0px;
 }
@@ -323,7 +175,7 @@ h3 {
   font-family: "Noto Sans KR", serif;
   font-weight: 100;
   font-size: 40px;
-  color: #EBDEF7;
+  color: #DCB6D7;
   margin: opx auto;
   padding: 0px;
 }
@@ -339,14 +191,14 @@ h5 {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
   font-size: 30px;
-  color: #EBDEF7;
+  color: #DCB6D7;
 }
 p {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
   font-size: 25px;
   line-height: 2;
-  color: #EBDEF7;
+  color: #DCB6D7;
 }
 #company-name {
   position: absolute;
