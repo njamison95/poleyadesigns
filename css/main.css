@@ -572,7 +572,7 @@ a:active {
   }
 }
 
-footer {
+/*footer {
   height: 250px;
   width: 100vw;
   background-color: red;
@@ -594,7 +594,7 @@ h3 {
   margin: 0px auto;
   padding: 0px;
   float: left;
-}
+}*/
 /* width */
 ::-webkit-scrollbar {
   display: none;
