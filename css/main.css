@@ -183,7 +183,7 @@ nav {
 h2 {
   font-family: "Noto Sans KR", serif;
   font-weight: 400;
-  font-size: 45px;
+  font-size: 30px;
   color:#DCB6D7;
   margin: 0px auto;
   padding: 0px;
@@ -202,6 +202,14 @@ h5 {
   font-weight: 350;
   font-size: 30px;
   color: #DCB6D7;
+}
+h6 {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 350;
+  font-size: 18px;
+  width: 200px;
+  color: #DCB6D7;
+  background-color: red;
 }
 p {
   font-family: "Noto Sans KR", serif;
@@ -239,12 +247,6 @@ p {
   margin-top: 115px;
   margin-left: 200px;
   margin-bottom: 0px;
-  width: 500px;
-  float: left;
-}
-#projects-title {
-  margin-top: 0;
-  width: 200px;
 }
 .sub-page-label {
   margin-bottom: 60px;
@@ -359,7 +361,6 @@ p {
 /*CLASSWORK*/
 .section-wrapper {
   max-width: 850px;
-  margin-top: 200px;
   margin-left: 43vw;
   margin-right: 50px;
 }
@@ -447,10 +448,23 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   gap: 2%;
 }
+
+.tempest-image {
+  width: 30%;
+  max-width: 400px;
+  min-width: 300px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
 /*PSEUDO CLASSES*/
-
-
-
 h1:hover {
   color: #ffd137;
 }
