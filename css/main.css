@@ -10,22 +10,25 @@ body {
 }
 
 /*header styles*/
-header {
+header, #header-home {
   width: 100vw;
   font-weight: 800;
   font-size: 15px;
+  background-color: #211924;
   text-transform: uppercase;
   display: flow-root;
   margin: 0px auto;
-  background-color: transparent;
   position: fixed;
   top: 0px;
   z-index: 3;
 }
+#header-home {
+  background-color: transparent;
+}
 nav {
   float: right;
 }
-#logo {
+.logo {
   width: 80px;
   height: 80px;
   margin-left: 20px;
@@ -113,32 +116,68 @@ nav {
   font-size: 20px;
   line-height: 1.3;
 }
-
-.about-me-bg {
-  width: 100vw;
-  height: 500px;
-  background-color: #211924;
+/*CAROUSEL*/
+.carousel {
+  overflow: hidden;
+  padding: 60px 0;
+/*  background-color: white;*/
+  white-space: nowrap;
+  position: relative;
 }
+.carousel:hover .carousel-item {
+  animation-play-state: paused;
+}
+.carousel:before,
+.carousel:after {
+  position: absolute;
+  top: 0;
+  width: 10vw;
+  height: 100%;
+  content: ""; /*when you have a before and after you have to pput a content property*/
+  z-index: 2;
+}
+.carousel:before {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #2C2130) ;
+}
+.carousel:after {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #2C2130) ;
+}
+.carousel-item {
+  display: inline-block;
+  animation: 35s carousel infinite linear;
+}
+.carousel-item img {
+  height: 300px;
+  margin: 0 40px;
+  object-fit: cover;
+}
+@keyframes carousel {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
+/*ABOUT ME*/
 .about-me-container {
   width: 60%;
-  height: 100%;
+  height: 400px;
   margin: 0px auto;
-  padding-top: 5vw;
-  margin-bottom: 200px;
-/*  background-color: red;*/
+  background-color: blue;
 }
 .left {
-/*  background-color: blue;*/
+  background-color: orange;
   width: 50%;
   height: 100%;
-  padding-right: 10%;
   float: left;
 }
 .right {
   width: 50%;
   height: 100%;
-  margin-bottom:100px;
-/*  background-color: green;*/
+  background-color: green;
   float: left;
 }
 h2 {
@@ -149,6 +188,7 @@ h2 {
   margin: 0px auto;
   padding: 0px;
 }
+
 h4 {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
@@ -443,11 +483,8 @@ a:active {
 .game-link:hover {
   color: #ffd137;
 }
-/*#logo:hover {
-  opacity: 0%;
-}*/
-/*MEDIA QUERIES*/
 
+/*MEDIA QUERIES*/
 @media screen and (max-width: 1098px) {
   .expandable {
     margin-left: 150px;
@@ -475,6 +512,7 @@ a:active {
     width: 100%;
     padding-right: none;
     float: none;
+    height: 300px;
   }
   .right {
     width:90%;
@@ -534,7 +572,29 @@ a:active {
   }
 }
 
-
+footer {
+  height: 250px;
+  width: 100vw;
+  background-color: red;
+  position: relative;
+}
+.logo-footer {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  float: left;
+}
+h3 {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 400;
+  font-size: 30px;
+  color:#DCB6D7;
+  margin: 0px auto;
+  padding: 0px;
+  float: left;
+}
 /* width */
 ::-webkit-scrollbar {
   display: none;
