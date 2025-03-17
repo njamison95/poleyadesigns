@@ -538,6 +538,11 @@ a:active {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media screen and (max-width: 765px) {
+  .footer-content-right {
+    float: left;
+    margin: 50px 0 0 100px;
+  }
 @media screen and (max-width: 715px) {
   .skills-wrapper {
 /*    background-color: blue;*/
@@ -590,22 +595,15 @@ footer {
   background-color: #211924;
 }
 .footer-content-left {
-  background-color: blue;
+/*  background-color: blue;*/
   float: left;
   margin: 50px 0 0 100px;
 }
-.logo-footer {
-  width: 120px;
-  height: 120px;
-}
-.h4-footer h4 {
-  font-family: "Noto Sans KR", serif;
-  font-weight: 350;
-  font-size: 30px;
-  padding: 0;
+.footer-content-left img {
+  height: 80px;
 }
 .footer-content-right {
-  background-color: blue;
+/*  background-color: blue;*/
   float: right;
   margin: 50px 100px 0 0;
 }
