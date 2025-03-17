@@ -367,13 +367,17 @@ p {
 /*CLASSWORK*/
 .section-wrapper {
   max-width: 850px;
+  height: 400px;
   margin-left: 43vw;
   margin-right: 50px;
+  background-color: blue;
 }
 .year-wrapper {
   width: 25%;
+  height: 100%;
   float: left;
   margin-bottom: 60px;
+  background-color: red;
 }
 .list-wrapper {
   width: 75%;
@@ -513,21 +517,15 @@ a:active {
     margin-bottom: 0px;
   }
 }
-@media screen and (max-width: 1002px) {
-  .left {
-    width: 100%;
-    padding-right: none;
-    float: none;
-    height: 300px;
-  }
-  .right {
-    width:90%;
-    padding-left: 5%;
-  }
-}
+
 @media screen and (max-width: 833px) {
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 727px) {
+  .footer-content-left, .footer-content-center, .footer-content-right {
+    width: 100%;
   }
 }
 @media screen and (max-width: 715px) {
@@ -541,24 +539,20 @@ a:active {
     margin-left: 50px;
   }
 }
-@media screen and (max-width: 727px) {
-  .footer-content-left, .footer-content-center, .footer-content-right {
-    float: none;
-    width: 100%;
-  }
-}
 
 footer {
   height: 330px;
   width: 100%;
   margin-top: 50px;
   background-color: #211924;
+  position: relative;
 }
 .footer-wrap {
+  position: absolute;
+  left: 50px;
   width: 90%;
   height: 100%;
 /*  background-color: orangered;*/
-  margin: 0px auto;
 }
 .footer-content-left {
 /*  background-color: blue;*/
