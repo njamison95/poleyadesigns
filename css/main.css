@@ -367,17 +367,14 @@ p {
 /*CLASSWORK*/
 .section-wrapper {
   max-width: 850px;
-  height: 400px;
   margin-left: 43vw;
   margin-right: 50px;
-  background-color: blue;
 }
 .year-wrapper {
   width: 25%;
   height: 100%;
   float: left;
   margin-bottom: 60px;
-  background-color: red;
 }
 .list-wrapper {
   width: 75%;
