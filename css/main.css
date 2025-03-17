@@ -214,7 +214,7 @@ h6 {
 p {
   font-family: "Noto Sans KR", serif;
   font-weight: 350;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   color: #DCB6D7;
 }
@@ -578,9 +578,6 @@ a:active {
   #about-me {
     font-size: 30px;
   }
-  p {
-    font-size: 16px;
-  }
   .icon-desc {
     font-size: 16px;
   }
@@ -590,12 +587,46 @@ footer {
   height: 250px;
   width: 100%;
   margin-top: 50px;
-  background-color: red;
+  background-color: #211924;
 }
-.footer-content {
+.footer-content-left {
+  background-color: blue;
+  float: left;
+  margin: 50px 0 0 100px;
+}
+.logo-footer {
+  width: 120px;
+  height: 120px;
+}
+.h4-footer h4 {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 350;
+  font-size: 30px;
+  padding: 0;
+}
+.footer-content-right {
   background-color: blue;
   float: right;
+  margin: 50px 100px 0 0;
 }
+.social-links, .page-links {
+  float: left;
+}
+ul {
+  font-size: 16px;
+}
+li {
+  list-style-type: none;
+}
+li img {
+  width: 40px;
+  height: auto;
+}
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
 /* width */
 ::-webkit-scrollbar {
   display: none;
