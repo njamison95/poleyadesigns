@@ -641,7 +641,10 @@ li img {
     display: inline-block;
     margin-right: 20px;
   }
-  ul {
+  .footer-content-centerR ul {
+    padding: 0;
+  }
+  .footer-content-right ul {
     padding: 0;
   }
 }
