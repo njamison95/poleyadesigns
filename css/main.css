@@ -224,6 +224,13 @@ p {
   line-height: 2;
   color: #DCB6D7;
 }
+ul {
+  font-family: "Noto Sans KR", serif;
+  font-weight: 350;
+  font-size: 18px;
+  color: #DCB6D7;
+  line-height: 2;
+}
 #company-name {
   position: absolute;
   top: 400px;
@@ -254,7 +261,7 @@ p {
   height: 100px;
   margin: 0px auto;
   margin-top: 130px;
-  background-color: blue;
+/*  background-color: blue;*/
 }
 .sub-page-label {
   margin-bottom: 60px;
@@ -364,63 +371,23 @@ p {
 }
 
 /*PROJECTS*/
-
-.project-wrap {
-  width: 80vw;
-  height: 100px;
+.year-wrap {
+  width: 80%;
+/*  height: 400px;*/
+/*  background-color: darkred;*/
   margin: 0px auto;
-  margin-bottom: 50px;
-  background-color: blue;
 }
-.project-container {
+.year-wrap h3 {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+}
+.year-left, .year-right {
   width: 50%;
   height: 100%;
   float: left;
-  background-color: green;
-}
-.section-wrapper {
-  max-width: 850px;
-  margin-left: 43vw;
-  margin-right: 50px;
-}
-.year-wrapper {
-  width: 25%;
-  height: 100%;
-  float: left;
-  margin-bottom: 60px;
-  background-color: blue;
-}
-.list-wrapper {
-  width: 75%;
-  float: left;
-  margin-bottom: 60px;
-}
-.year {
-  margin: 0px;
-  margin-top: 10px;
-  float: left;
-  color: #DCB6D7;
-
-  animation-name: year;
-  animation-duration: 1s;
-}
-@keyframes year {
-  0% { 
-    transform: translate3d(0, 100%, 0);
-    opacity: 0%; 
-  }
-  100% { 
-    transform: translate3d(0, 0, 0);
-    opacity: 100%; 
-  }
-}
-ul {
-  font-family: "Noto Sans KR", serif;
-  font-weight: 350;
-  font-size: 20px;
-  color: #DCB6D7;
-  margin: 0px;
-  line-height: 2;
+  padding-right: 30px;
 }
 
 /*TYPE CLASS CARDS*/
@@ -470,20 +437,21 @@ ul {
   gap: 2%;
 }
 
-.tempest-image {
+/*TEMPEST*/
+.tempest-image, .tempest-video {
   width: 30%;
   max-width: 400px;
   min-width: 300px;
+  margin-bottom: 100px;
   height: auto;
 }
-
-
-
-
-
-
-
-
+.tempest-image {
+  margin-left: 10%;
+  margin-right: 60px;
+}
+#tempest-label {
+  margin-bottom: 70px;
+}
 
 /*PSEUDO CLASSES*/
 h1:hover {
@@ -493,12 +461,12 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #CEB7CB;
+  color: #DCB6D7;
   transition: 0.4s;
 }
 /* visited link */
 a:visited {
-  color: #CEB7CB;
+  color: #DCB6D7;
 }
 /* mouse over link */
 a:hover {
@@ -649,17 +617,30 @@ li img {
   }
 }
 @media screen and (max-width: 833px) {
+  .year-wrap {
+    width: 80%;
+    margin: 0px auto;
+  }
+  .year-left, .year-right {
+    width: 100%;
+    margin-bottom: 50px;
+    float: none;
+    padding-right: none;
+  }
   .card-grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media screen and (max-width: 740px) {
+  .tempest-image {
+    margin-bottom: 60px;
+  }
+  .tempest-video {
+    margin-left: 10%;
+  }
+}
+
 @media screen and (max-width: 715px) {
-  .section-wrapper {
-    margin-left: 30px;
-  }
-  ul {
-    font-size: 18px;
-  }
   .grid-wrapper, .bib-wrapper, .moth-wrapper {
     margin-left: 50px;
   }
