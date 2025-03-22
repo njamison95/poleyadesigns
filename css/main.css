@@ -232,6 +232,8 @@ ul {
   font-size: 18px;
   color: #DCB6D7;
   line-height: 2;
+  padding: 0;
+  margin: 0;
 }
 #company-name {
   position: absolute;
@@ -364,7 +366,7 @@ ul {
   margin-bottom: 15px;
 }
 .year-left, .year-right {
-  width: 50%;
+  width: 40%;
   height: 100%;
   float: left;
   padding-right: 30px;
