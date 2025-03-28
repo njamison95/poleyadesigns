@@ -396,7 +396,7 @@ ul {
 /*OTHER*/
 .bib-wrapper, .menu-wrapper, .redirect-wrapper, .moth-wrapper {
   max-width: 80%;
-  margin-left: 200px;
+  margin: 0px auto;
 }
 .bib-wrapper img {
   width: 100%;
@@ -626,11 +626,6 @@ a:active {
   }
   .tempest-video {
     margin-left: 10%;
-  }
-}
-@media screen and (max-width: 715px) {
-  .grid-wrapper, .bib-wrapper, .moth-wrapper {
-    margin-left: 50px;
   }
 }
 @media screen and (max-width: 380px) {
