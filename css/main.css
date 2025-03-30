@@ -42,6 +42,7 @@ nav {
   position: relative;
   display: inline-block;
   float: right;
+  transition: 0.4s;
 }
 .dropbtn {
   background-color: transparent;
@@ -61,6 +62,19 @@ nav {
   font-size: 14px;
   display: none;
   position: absolute;
+  background-color: #211924;
+  font-family: "Noto Sans KR", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  min-width: 173px;
+  z-index: 1;
+  transition: 0.4s;
+}
+.dropdown-content-home {
+  font-size: 14px;
+  display: none;
+  position: absolute;
   background-color: #2C2130;
   font-family: "Noto Sans KR", serif;
   font-weight: 400;
@@ -70,7 +84,15 @@ nav {
   z-index: 1;
   transition: 0.4s;
 }
+
 /* Links inside the dropdown */
+.dropdown-content-home a {
+  color: #CEB7CB;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.4s;
+}
 .dropdown-content a {
   color: #CEB7CB;
   padding: 12px 16px;
@@ -80,6 +102,10 @@ nav {
 }
 
 /* Change color of dropdown links on hover */
+.dropdown-content-home a:hover {
+  background-color: #DCB6D7;
+  color: #2C2130;
+}
 .dropdown-content a:hover {
   background-color: #DCB6D7;
   color: #2C2130;
@@ -87,6 +113,7 @@ nav {
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content-home {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
@@ -129,6 +156,9 @@ nav {
 .carousel:hover .carousel-item {
   animation-play-state: paused;
 }
+/*.carousel-item:hover {
+  scale: 105%;
+}*/
 .carousel:before,
 .carousel:after {
   position: absolute;
