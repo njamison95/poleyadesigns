@@ -492,6 +492,15 @@ iframe {
   height: 100%;
 }
 
+/*FILM POSTER*/
+.poster-wrapper {
+  max-width: 40%;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+.poster-wrapper img {
+  width: 100%;
+}
 /*FOOTER*/
 footer {
   height: 200px;
