@@ -4,7 +4,7 @@
 body {
   margin: 0;
   background-color: #2C2130;
-  font-family: "Noto Sans KR", serif;
+  font-family: "Anek Gurmukhi", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -50,7 +50,7 @@ nav {
   border: none;
   padding: 25px 60px;
   margin-right: 20px;
-  font-family: "Noto Sans KR", serif;
+  font-family: "Anek Gurmukhi", sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
@@ -63,7 +63,7 @@ nav {
   display: none;
   position: absolute;
   background-color: #211924;
-  font-family: "Noto Sans KR", serif;
+  font-family: "Anek Gurmukhi", sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
@@ -76,7 +76,7 @@ nav {
   display: none;
   position: absolute;
   background-color: #2C2130;
-  font-family: "Noto Sans KR", serif;
+  font-family: "Anek Gurmukhi", sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
@@ -217,22 +217,22 @@ nav {
   }
 }
 h2 {
-  font-family: "Noto Sans KR", serif;
-  font-weight: 100;
+  font-family: "Anek Gurmukhi", sans-serif;
+  font-weight: 200;
   font-size: 90px;
   color:#DCB6D7;
   margin: 0px auto;
   padding: 0px;
 }
 h3 {
-  font-family: "Noto Sans KR", serif;
+  font-family: "Anek Gurmukhi", sans-serif;
   font-weight: 350;
   font-size: 20px;
   margin-top: 50px;
   color:#DCB6D7;
 }
 h4 {
-  font-family: "Noto Sans KR", serif;
+  font-family: "Anek Gurmukhi", sans-serif;
   font-weight: 350;
   font-size: 30px;
   margin-top: 60px;
@@ -240,13 +240,13 @@ h4 {
   float: right;
 }
 h5 {
-  font-family: "Noto Sans KR", serif;
+  font-family: "Anek Gurmukhi", sans-serif;
   font-weight: 350;
   font-size: 30px;
   color: #DCB6D7;
 }
 h6 {
-  font-family: "Noto Sans KR", serif;
+  font-family: "Anek Gurmukhi", sans-serif;
   font-weight: 350;
   font-size: 18px;
   width: 200px;
@@ -254,14 +254,14 @@ h6 {
   background-color: red;
 }
 p {
-  font-family: "Noto Sans KR", serif;
-  font-weight: 350;
+  font-family: "Anek Gurmukhi", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 2;
   color: #DCB6D7;
 }
 ul {
-  font-family: "Noto Sans KR", serif;
+  font-family: "Anek Gurmukhi", sans-serif;
   font-weight: 350;
   font-size: 18px;
   color: #DCB6D7;
