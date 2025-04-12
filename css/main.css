@@ -496,16 +496,44 @@ ul {
 }
 .iframe-wrap-desktop-2 {
   width: 80vw;
-  height: 45vw;
+  height: 4vw;
   margin: 0px auto;
   margin-bottom: 100px;
+}
+.iframe-wrap-mobile {
+  width: 12.81vw;
+  height: 34.16vw;
+  margin-left: 10vw;
+  margin-bottom: 50px;
+  float: left;
 }
 iframe {
   border: none;
   width: 100%;
   height: 100%;
 }
-
+/*REDIRECT*/
+#what-is-redirect {
+  width: 61vw;
+  height: 34.16vw;
+  margin-left: 5vw;
+  margin-bottom: 50px;
+  background-color: blue;
+  float: left;
+}
+#what-is-redirect img {
+  width: 100%;
+  height: 100%;
+}
+.redirect-image-wrap {
+  width: 61vw;
+  height: 34.16vw;
+  margin: 0px auto;
+}
+.redirect-image-wrap img {
+  width: 100%;
+  height: 100%;
+}
 /*FILM POSTER*/
 .poster-wrapper {
   width: 40%;
