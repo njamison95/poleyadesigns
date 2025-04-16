@@ -528,6 +528,7 @@ iframe {
 .redirect-image-wrap {
   width: 61vw;
   height: 34.16vw;
+  margin-bottom: 50px;
   margin: 0px auto;
 }
 .redirect-image-wrap img {
