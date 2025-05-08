@@ -128,49 +128,6 @@ nav {
   width: 100vw;
 }
 
-/*ABOUT ME*/
-.about-me-wrap {
-  width: 100vw;
-  height: 800px;
-}
-#about-me-title {
-  font-size: 90px;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-.about-me-text {
-  max-width: 460px;
-  margin-left: 20vw;
-  margin-right: 40px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  float: left;
-}
-.portrait-wrap {
-  float: left;
-  max-width: 400px;
-  margin-left: 7vw;
-}
-.portrait-wrap img {
-  width: 100%;
-}
-/*.icon-container {
-  height: 50%;
-  width: 50%;
-  padding-top: 10%;
-  float: left;
-}
-.website-icon {
-  height: 60px;
-}
-#html-icon {
-  height: 40px;
-}
-.icon-desc {
-  font-size: 20px;
-  line-height: 1.3;
-}*/
-
 /*CAROUSEL*/
 .carousel {
   overflow: hidden;
@@ -221,7 +178,7 @@ nav {
 }
 h2 {
   font-family: "Anek Gurmukhi", sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   font-size: 90px;
   color:#DCB6D7;
   margin: 0px auto;
@@ -304,8 +261,79 @@ ul {
 }
 .sub-page-label {
   margin-top: 100px;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
   margin-left: 50px;
+}
+.sub-page-label-2 {
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+/*ABOUT ME*/
+.home-content-wrap {
+  width: 100vw;
+  height: 800px;
+}
+#about-me-title {
+  font-size: 90px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.home-content-text-left {
+  max-width: 460px;
+  margin-left: 20vw;
+  margin-right: 40px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  float: left;
+}
+.portrait-wrap-right {
+  float: left;
+  max-width: 400px;
+  margin-left: 7vw;
+}
+.portrait-wrap-right img {
+  width: 100%;
+}
+
+/*CASE STUDY*/
+#case-study-title {
+  font-size: 90px;
+  margin-top: 0;
+  margin-bottom: -42px;
+}
+#case-study-title h2 {
+  font-weight: 500;
+}
+#case-study-subtitle {
+  font-size: 50px;
+  color: #2C2130;
+}
+#case-study-text {
+  color: #2C2130;
+}
+.case-study-bg {
+  width: 100vw;
+  height: 850px;
+  background-color: #DCB6D7;
+}
+.home-content-text-right {
+  max-width: 460px;
+  margin-left: 7vw;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  float: left;
+}
+.portrait-wrap-left {
+  float: left;
+  max-width: 400px;
+  margin-left: 20vw;
+  margin-right: 40px;
+  margin-top: 100px;
+}
+.portrait-wrap-left img {
+  width: 100%;
 }
 /*LOGOS*/
 .logo-text {
@@ -539,6 +567,7 @@ iframe {
 .poster-wrapper {
   width: 40%;
   margin: 0px auto;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 .poster-wrapper img {
@@ -661,11 +690,6 @@ a:active {
 }
 
 /*MEDIA QUERIES*/
-@media screen and (max-width: 860px) {
-  h2 {
-    font-size: 10.5vw;
-  }
-}
 
 @media screen and (max-width: 1098px) {
   .projects-content {
@@ -679,21 +703,27 @@ a:active {
   }
 }
 @media screen and (max-width: 1310px) {
-  .about-me-wrap {
+  .home-content-wrap {
     height: 1050px;
   }
   #about-me-title {
-    margin-left: 10vw;
     margin-bottom: 20px;
   }
-  .about-me-text {
+  .home-content-text-left {
     margin-right: 20px;
     margin-top: 0;
   }
-  .portrait-wrap {
+  .portrait-wrap-right {
     float: none;
     max-width: 400px;
     margin-left: 20vw;
+  }
+  .case-study-bg {
+    height: 1400px;
+  }
+  #case-study-title {
+    margin-bottom: -42px;
+    margin-top: 70px;
   }
 }
 @media screen and (max-width: 863px) {
@@ -773,13 +803,24 @@ a:active {
     margin-left: 7vw;
   }
   #about-me-title h2{
-    font-size: 15vw;
+    font-size: 50px;
   }
-  .about-me-text {
+  .home-content-text-left {
     margin-left: 7vw;
   }
-  .portrait-wrap {
+  .portrait-wrap-right {
     width: 80vw;
+    margin-left: 7vw;
+  }
+  #case-study-title {
+    margin-bottom: -23px;
+    margin-left: 7vw;
+  }
+  #case-study-title h2 {
+    font-size: 50px;
+    color: red;
+  }
+  .portrait-wrap-left {
     margin-left: 7vw;
   }
   .menu-wrapper {
