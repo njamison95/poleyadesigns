@@ -309,7 +309,7 @@ ul {
   font-size: 50px;
   color: #2C2130;
 }
-#case-study-text {
+.case-study-text {
   color: #2C2130;
 }
 .case-study-bg {
@@ -564,16 +564,38 @@ iframe {
   height: 100%;
 }
 /*FILM POSTER*/
+.poster-container {
+  width: 100vw;
+  height: 1000px;
+/*  background-color: blue;*/
+  padding-top: 100px;
+}
 .poster-wrapper {
   width: 40%;
-  margin: 0px auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-left: 10%;
+  float: left;
 }
 .poster-wrapper img {
   width: 100%;
   max-width: 500px;
   min-width: 280px;
+}
+.poster-desc {
+  float: left;
+/*  background-color: purple;*/
+}
+.poster-subtitle {
+  width: 400px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  font-size: 40px;
+}
+.poster-brief {
+  width: 600px;
+  margin-top: 0;
+  margin-left: 50px;
+/*  background-color: green;*/
 }
 /*FOOTER*/
 footer {
@@ -683,7 +705,12 @@ a:active {
 .game-link:hover {
   color: #ffd137;
 }
-
+.case-study-text a {
+  color: #2C2130;
+}
+.case-study-text a:hover {
+  color: #6b4a7a;
+}
 /* width */
 ::-webkit-scrollbar {
   display: none;
@@ -718,12 +745,29 @@ a:active {
     max-width: 400px;
     margin-left: 20vw;
   }
+  .home-content-text-right {
+    margin-left: 20vw;
+    margin-top: 0px;
+  }
   .case-study-bg {
-    height: 1400px;
+    height: 1150px;
   }
   #case-study-title {
     margin-bottom: -42px;
     margin-top: 70px;
+  }
+  #case-study-subtitle {
+    margin-bottom: 0px;
+  }
+  .poster-container {
+    height: 1900px;
+  }
+  .poster-wrapper {
+    float: none;
+  }
+  .poster-desc {
+    float: none;
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 863px) {
@@ -819,6 +863,9 @@ a:active {
   #case-study-title h2 {
     font-size: 50px;
     color: red;
+  }
+  .home-content-text-right {
+    margin-left: 7vw;
   }
   .portrait-wrap-left {
     margin-left: 7vw;
