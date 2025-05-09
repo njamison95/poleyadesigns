@@ -757,7 +757,7 @@ a:active {
 }
 @media screen and (max-width: 1310px) {
   .home-content-wrap {
-    height: 1050px;
+    height: 1150px;
   }
   #about-me-title {
     margin-bottom: 20px;
@@ -885,7 +885,6 @@ a:active {
   }
   #case-study-title h2 {
     font-size: 50px;
-    color: red;
   }
   .home-content-text-right {
     margin-left: 7vw;
