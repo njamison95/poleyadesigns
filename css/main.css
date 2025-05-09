@@ -36,6 +36,13 @@ nav {
   margin-top: 1px;
   float: left;
 }
+.by-me {
+  width: 400px;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  left: 120px;
+}
 /* Dropdown Button */
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -283,7 +290,6 @@ ul {
   max-width: 460px;
   margin-left: 20vw;
   margin-right: 40px;
-  margin-top: 50px;
   margin-bottom: 30px;
   float: left;
 }
@@ -295,7 +301,17 @@ ul {
 .portrait-wrap-right img {
   width: 100%;
 }
-
+.download-btn {
+  padding: 16px 32px;
+  border-radius: 5px;
+  background-color: #DCB6D7;
+  color: #2C2130;
+  font-family: "Anek Gurmukhi", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  display: inline-block;
+}
 /*CASE STUDY*/
 #case-study-title {
   font-size: 90px;
@@ -571,7 +587,7 @@ iframe {
   padding-top: 100px;
 }
 .poster-wrapper {
-  width: 40%;
+  width: 35%;
   margin-left: 10%;
   float: left;
 }
@@ -581,7 +597,8 @@ iframe {
   min-width: 280px;
 }
 .poster-desc {
-  margin-left: 10vw;
+  margin-left: 5vw;
+  margin-right: 20px;
   float: left;
 /*  background-color: purple;*/
 }
@@ -725,6 +742,13 @@ a:active {
 .case-study-text a:hover {
   color: #6b4a7a;
 }
+.download-btn:link {
+  color: #2C2130;
+  background-color: #DCB6D7;
+}
+.download-btn:hover {
+  background-color: #ffd137;
+}
 /* width */
 ::-webkit-scrollbar {
   display: none;
@@ -745,7 +769,7 @@ a:active {
 }
 @media screen and (max-width: 1686px) {
   .poster-container {
-    height: 2900px;
+    height: 2100px;
   }
   .poster-wrapper {
     margin-bottom: 50px;
@@ -757,7 +781,7 @@ a:active {
 }
 @media screen and (max-width: 1310px) {
   .home-content-wrap {
-    height: 1150px;
+    height: 1200px;
   }
   #about-me-title {
     margin-bottom: 20px;
@@ -785,6 +809,9 @@ a:active {
   #case-study-subtitle {
     margin-bottom: 0px;
   }
+  .poster-container {
+    height: 2850px;
+  }
   .poster-wrapper {
     float: none;
   }
@@ -808,7 +835,7 @@ a:active {
     padding-right: none;
   }
   footer {
-    height: 400px;
+    height: 500px;
   }
   .footer-content-left, .footer-content-centerL, .footer-content-centerR, .footer-content-right {
     width: 100%;
@@ -820,6 +847,7 @@ a:active {
   .footer-content-centerL {
     height: 15%;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   .footer-content-centerL h3 {
     margin-top: 0px;
@@ -863,6 +891,9 @@ a:active {
   }
 }
 @media screen and (max-width: 600px) {
+  .by-me {
+    color: transparent;
+  }
   .sub-page-label {
     margin-left: 7vw;
   }
@@ -923,4 +954,8 @@ a:active {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
-
+@media screen and (max-width: 330px) {
+  .home-content-wrap {
+    height: 1250px;
+  }
+}
