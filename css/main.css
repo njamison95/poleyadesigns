@@ -566,7 +566,7 @@ iframe {
 /*FILM POSTER*/
 .poster-container {
   width: 100vw;
-  height: 1000px;
+  height: 1600px;
 /*  background-color: blue;*/
   padding-top: 100px;
 }
@@ -581,20 +581,34 @@ iframe {
   min-width: 280px;
 }
 .poster-desc {
+  margin-left: 10vw;
   float: left;
 /*  background-color: purple;*/
+}
+.poster-wrapper-2 {
+  width: 80%;
+  height: 500px;
+  margin-left: 10%;
+  margin-top: 100px;
+/*  background-color: blue;*/
+  float: left;
+}
+.poster-wrapper-2 img {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 2vw;
+  margin-bottom: 40px;
+  height: auto;
 }
 .poster-subtitle {
   width: 400px;
   margin-top: 0;
   margin-bottom: 30px;
-  margin-left: 50px;
   font-size: 40px;
 }
 .poster-brief {
   width: 600px;
   margin-top: 0;
-  margin-left: 50px;
 /*  background-color: green;*/
 }
 /*FOOTER*/
@@ -729,6 +743,18 @@ a:active {
     margin-bottom: 0px;
   }
 }
+@media screen and (max-width: 1686px) {
+  .poster-container {
+    height: 2900px;
+  }
+  .poster-wrapper {
+    margin-bottom: 50px;
+  }
+  .poster-wrapper-2 {
+    width: 700px;
+    float: left;
+  }
+}
 @media screen and (max-width: 1310px) {
   .home-content-wrap {
     height: 1050px;
@@ -758,9 +784,6 @@ a:active {
   }
   #case-study-subtitle {
     margin-bottom: 0px;
-  }
-  .poster-container {
-    height: 1900px;
   }
   .poster-wrapper {
     float: none;
@@ -876,7 +899,7 @@ a:active {
   .tempest-video, .tempest-image {
     margin-left: 7vw;
   }
-  .poster-wrapper {
+  .poster-wrapper, .poster-desc {
     margin-left: 7vw;
   }
   .gmu-container {
