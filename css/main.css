@@ -3,9 +3,9 @@
 }
 body {
   margin: 0;
-  background-color: #2C2130;
-  font-family: "Anek Gurmukhi", sans-serif;
-  font-weight: 300;
+  background-color: #F9EDDC;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -53,15 +53,15 @@ nav {
 }
 .dropbtn {
   background-color: transparent;
-  font-size: 14px;
+  font-size: 16px;
   border: none;
   padding: 25px 60px;
   margin-right: 20px;
-  font-family: "Anek Gurmukhi", sans-serif;
-  font-weight: 500;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 700;
   font-style: normal;
   letter-spacing: 1px;
-  color: #DCB6D7;
+  color: #2C2130;
   transition: 0.4s;
 }
 /* Dropdown Content (Hidden by Default) */
@@ -69,9 +69,9 @@ nav {
   font-size: 14px;
   display: none;
   position: absolute;
-  background-color: #211924;
-  font-family: "Anek Gurmukhi", sans-serif;
-  font-weight: 500;
+  background-color: #EADBC7;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 700;
   font-style: normal;
   letter-spacing: 1px;
   min-width: 173px;
@@ -82,9 +82,9 @@ nav {
   font-size: 14px;
   display: none;
   position: absolute;
-  background-color: #2C2130;
-  font-family: "Anek Gurmukhi", sans-serif;
-  font-weight: 500;
+  background-color: #EADBC7;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 700;
   font-style: normal;
   letter-spacing: 1px;
   min-width: 173px;
@@ -94,14 +94,14 @@ nav {
 
 /* Links inside the dropdown */
 .dropdown-content-home a {
-  color: #DCB6D7;
+  color: #2C2130;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   transition: 0.4s;
 }
 .dropdown-content a {
-  color: #DCB6D7;
+  color: #2C2130;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -125,7 +125,7 @@ nav {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   text-decoration: underline;
-  color: #FFD137;
+  color: #DCB6D7;
 }
 
 .gif-container {
@@ -160,11 +160,11 @@ nav {
 }
 .carousel:before {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #2C2130) ;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #F9EDDC) ;
 }
 .carousel:after {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #2C2130) ;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #F9EDDC) ;
 }
 .carousel-item {
   display: inline-block;
@@ -184,22 +184,22 @@ nav {
   }
 }
 h2 {
-  font-family: "Anek Gurmukhi", sans-serif;
-  font-weight: 500;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 700;
   font-size: 90px;
-  color:#DCB6D7;
+  color:#2C2130;
   margin: 0px auto;
   padding: 0px;
 }
 h3 {
-  font-family: "Anek Gurmukhi", sans-serif;
-  font-weight: 350;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 700;
   font-size: 20px;
   margin-top: 50px;
-  color:#DCB6D7;
+  color:#2C2130;
 }
 h4 {
-  font-family: "Anek Gurmukhi", sans-serif;
+  font-family: "Averia Sans Libre", sans-serif;
   font-weight: 350;
   font-size: 30px;
   margin-top: 60px;
@@ -207,31 +207,34 @@ h4 {
   float: right;
 }
 h5 {
-  font-family: "Anek Gurmukhi", sans-serif;
+  font-family: "Averia Sans Libre", sans-serif;
   font-weight: 350;
   font-size: 30px;
-  color: #DCB6D7;
+  color: #2C2130;
 }
 h6 {
-  font-family: "Anek Gurmukhi", sans-serif;
+  font-family: "Averia Sans Libre", sans-serif;
   font-weight: 350;
   font-size: 18px;
   width: 200px;
-  color: #DCB6D7;
+  color: #2C2130;
   background-color: red;
 }
 p {
-  font-family: "Anek Gurmukhi", sans-serif;
+  font-family: "Gurmukhi", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 2;
-  color: #DCB6D7;
+  color: #2C2130;
+}
+.by-me {
+  font-family: "Averia Sans Libre", sans-serif;
 }
 ul {
-  font-family: "Anek Gurmukhi", sans-serif;
-  font-weight: 350;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 700;
   font-size: 18px;
-  color: #DCB6D7;
+  color: #2C2130;
   line-height: 2;
   padding: 0;
   margin: 0;
@@ -306,7 +309,7 @@ ul {
   border-radius: 5px;
   background-color: #DCB6D7;
   color: #2C2130;
-  font-family: "Anek Gurmukhi", sans-serif;
+  font-family: "Averia Sans Libre", sans-serif;
   font-size: 16px;
   font-weight: 500;
   border: none;
@@ -319,7 +322,7 @@ ul {
   margin-bottom: -42px;
 }
 #case-study-title h2 {
-  font-weight: 500;
+  font-weight: 700;
 }
 #case-study-subtitle {
   font-size: 50px;
@@ -634,7 +637,7 @@ footer {
   width: 100%;
 /*  position: absolute;
   bottom: -330px;*/
-  background-color: #211924;
+  background-color: #EADBC7;
 }
 .footer-wrap {
   width: 90%;
@@ -711,16 +714,16 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #DCB6D7;
+  color: #2C2130;
   transition: 0.4s;
 }
 /* visited link */
 a:visited {
-  color: #DCB6D7;
+  color: #2C2130;
 }
 /* mouse over link */
 a:hover {
-  color: #ffd137;
+  color: #DCB6D7;
 }
 /* selected link */
 a:active {
