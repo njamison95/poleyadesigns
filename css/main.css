@@ -222,7 +222,7 @@ h6 {
 }
 p {
   font-family: "Gurmukhi", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 17px;
   line-height: 2;
   color: #2C2130;
@@ -311,30 +311,30 @@ ul {
   color: #2C2130;
   font-family: "Averia Sans Libre", sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   border: none;
   display: inline-block;
 }
 /*CASE STUDY*/
 #case-study-title {
   font-size: 90px;
-  margin-top: 0;
-  margin-bottom: -42px;
 }
 #case-study-title h2 {
   font-weight: 700;
+  padding-top: 80px;
+  color: #F9EDDC;
 }
 #case-study-subtitle {
   font-size: 50px;
-  color: #2C2130;
+  color: #F9EDDC;
 }
 .case-study-text {
-  color: #2C2130;
+  color: #F9EDDC;
 }
 .case-study-bg {
   width: 100vw;
-  height: 850px;
-  background-color: #DCB6D7;
+  height: 1000px;
+  background-color: #2C2130;
 }
 .home-content-text-right {
   max-width: 460px;
@@ -385,7 +385,7 @@ ul {
   height: auto;
 }
 .neko-logo-container p {
-  color: floralwhite;
+  color: #F9EDDC;
 }
 .psdh-logo-bg {
 /*  background-color: orange;*/
@@ -410,7 +410,7 @@ ul {
   height: auto;
 }
 .psdh-logo-container p {
-  color: floralwhite;
+  color: #F9EDDC;
 }
 
 /*GMU*/
@@ -441,7 +441,7 @@ ul {
 /*PROJECTS*/
 .projects-content {
   width: 80%;
-  height: 600px;
+  height: 1000px;
   margin: 0px auto;
 /*  background-color: grey;*/
 }
@@ -456,11 +456,10 @@ ul {
   padding: 0;
   margin-bottom: 15px;
 }
-.year-left, .year-right {
-  width: 40%;
+.year {
+  width: 80%;
   height: 100%;
-  float: left;
-  padding-right: 30px;
+  margin-top: 50px;
 }
 /*.year-left {
   background-color: darkgreen;
@@ -729,21 +728,19 @@ a:hover {
 a:active {
   color: #a443b3;
 }
-.game-desc a {
-  color: floralwhite;
-  text-decoration: none;
-}
-.game-desc a:hover {
-  color: #ffd137;
+.game-link:link {
+  text-decoration: underline;
+  color: #F9EDDC;
+  transition: 0.4s;
 }
 .game-link:hover {
-  color: #ffd137;
+  color: #DCB6D7;
 }
 .case-study-text a {
-  color: #2C2130;
+  color: #F9EDDC;
 }
 .case-study-text a:hover {
-  color: #6b4a7a;
+  color: #DCB6D7;
 }
 .download-btn:link {
   color: #2C2130;
@@ -760,9 +757,6 @@ a:active {
 /*MEDIA QUERIES*/
 
 @media screen and (max-width: 1098px) {
-  .projects-content {
-    height: 650px;
-  }
   .list-wrapper {
     width: 100%;
   }
@@ -803,7 +797,7 @@ a:active {
     margin-top: 0px;
   }
   .case-study-bg {
-    height: 1150px;
+    height: 1300px;
   }
   #case-study-title {
     margin-bottom: -42px;
@@ -824,9 +818,6 @@ a:active {
   }
 }
 @media screen and (max-width: 863px) {
-  .projects-content {
-    height: 1000px;
-  }
   .year-wrap {
     margin: 0px auto;
 /*    background-color: darkred;*/
@@ -939,8 +930,6 @@ a:active {
     margin-left: 7vw;
   }
   ul {
-    font-family: "Noto Sans KR", serif;
-    font-weight: 350;
     font-size: 16px;
     color: #DCB6D7;
     line-height: 2;
@@ -948,7 +937,11 @@ a:active {
     margin: 0;
   }
 }
-
+@media screen and (max-width: 394px) {
+  .projects-content {
+    height: 1200px;
+  }
+}
 @media screen and (max-width: 380px) {
   .neko-logo-container, .psdh-logo-container {
     left: 7vw;
