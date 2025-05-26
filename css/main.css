@@ -15,16 +15,13 @@ header, #header-home {
   height: 70px;
   font-weight: 800;
   font-size: 15px;
-/*  background-color: #211924;*/
+  background-color: rgba(249, 237, 220, 0.8);
   text-transform: uppercase;
   display: flow-root;
   margin: 0px auto;
   position: fixed;
   top: 0px;
   z-index: 3;
-}
-#header-home {
-  background-color: transparent;
 }
 nav {
   float: right;
@@ -439,6 +436,15 @@ ul {
 }
 
 /*PROJECTS*/
+.projects-decor {
+  width: 1300px;
+  height: auto;
+  opacity: 10%;
+  position: absolute;
+  top: 200px;
+  right: -300px;
+  transform: rotate(-30deg);
+}
 .projects-content {
   width: 80%;
   height: 1000px;
