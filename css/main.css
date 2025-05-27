@@ -474,6 +474,16 @@ ul {
   background-color: purple;
 }
 */
+
+/*FRACTAL NOISE*/
+.video-wrapper {
+  max-width: 80%;
+  margin: 0px auto;
+  margin-bottom: 100px;
+}
+.fractal-video {
+  width: 100%;
+}
 /*TYPE CLASS CARDS*/
 .grid-wrapper {
   max-width: 80%;
