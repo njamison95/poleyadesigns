@@ -784,9 +784,9 @@ a:visited {
   color: #2C2130;
 }
 /* mouse over link */
-a:hover {
+/*a:hover {
   color: #DCB6D7;
-}
+}*/
 /* selected link */
 a:active {
   color: #a443b3;
