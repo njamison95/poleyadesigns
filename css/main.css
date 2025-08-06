@@ -147,6 +147,7 @@ h1 {
   width: 70vw;
   max-width: 900px;
   margin: 0px;
+  color: #2C2130;
 }
 .featured-wrap {
   margin: 0px auto;
@@ -171,6 +172,9 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
+#social-bg {
+  object-fit: cover;
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -192,6 +196,11 @@ h1 {
   z-index: 2;
   color: #F9EDDC;
   font-size: 30px;
+}
+#social-bg img {
+  width: 700px;
+  height: auto;
+  object-fit: contain;
 }
 .feat-image-cont:hover .overlay {
   opacity: 1;
@@ -248,8 +257,7 @@ h2 {
   font-family: "Averia Sans Libre", sans-serif;
   font-weight: 700;
   font-size: 60px;
-  /*color:#2C2130;*/
-  color: red;
+  color:#2C2130;
   margin: 0px auto;
   margin-top: 100px;
   padding: 0px;
