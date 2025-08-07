@@ -172,13 +172,6 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
-#metroid-bg {
-  transform: scale(1.10, 1.10);
-  object-fit: cover;
-}
-#metroid-bg img {
-
-}
 .overlay {
   position: absolute;
   top: 0;
@@ -209,11 +202,11 @@ h1 {
 .feat-image-cont:hover .overlay {
   opacity: 1;
 }
-/*CAROUSEL*/
+/*CAROUSEL
 .carousel {
   overflow: hidden;
   padding: 60px 0;
-/*  background-color: white;*/
+  background-color: white;
   white-space: nowrap;
   position: relative;
 }
@@ -229,7 +222,7 @@ h1 {
   top: 0;
   width: 10vw;
   height: 100%;
-  content: ""; /*when you have a before and after you have to pput a content property*/
+  content: ""; /*when you have a before and after you have to pput a content property
   z-index: 2;
 }
 .carousel:before {
@@ -256,7 +249,7 @@ h1 {
   to{
     transform: translateX(-100%);
   }
-}
+}*/
 h2 {
   font-family: "Averia Sans Libre", sans-serif;
   font-weight: 700;
@@ -270,31 +263,26 @@ h2 {
 h3 {
   font-family: "Averia Sans Libre", sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  margin-top: 50px;
+  font-size: 40px;
+  margin: 0px;
+  margin-bottom: 10px;
   color:#2C2130;
 }
 h4 {
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 350;
-  font-size: 30px;
-  margin-top: 60px;
-  margin-right: 40px;
-  float: right;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0px;
+  margin-bottom: 10px;
+  color:#2C2130;
 }
 h5 {
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 350;
-  font-size: 30px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: #2C2130;
-}
-h6 {
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 350;
-  font-size: 18px;
-  width: 200px;
-  color: #2C2130;
-  background-color: red;
+  margin: 0px;
+  font-style: italic;
 }
 p {
   font-family: "Jost", sans-serif;
@@ -315,7 +303,7 @@ ul {
   padding: 0;
   margin: 0;
 }
-#company-name {
+/*#company-name {
   position: absolute;
   top: 400px;
   left: -275px;
@@ -328,8 +316,8 @@ ul {
   -ms-transform: rotate(-90deg);
   /* Opera */
   -o-transform: rotate(-90deg);
-/*  animation: glow 2s ease-in-out infinite alternate;*/
-}
+/*  animation: glow 2s ease-in-out infinite alternate;
+}*/
 #my-name {
   font-size: 16px;
   float: left;
@@ -355,6 +343,29 @@ ul {
   margin-left: 118px;
 }
 
+/*BIB*/
+.content-wrap {
+  width: 85%;
+  height: 600px;
+  margin-left: 118px;
+  margin-top: 175px;
+  margin-bottom: 100px;
+  background-color: green;
+}
+.left, .right {
+  height: 600px;
+  float: left;
+}
+.left {
+  width: 30%;
+  max-width: 600px;
+  background-color: red;
+  margin-right: 50px;
+}
+.right { 
+  width: calc(70% - 50px);
+  background-color: blue;
+}
 /*ABOUT ME*/
 .home-content-wrap {
   width: 100vw;
@@ -736,9 +747,7 @@ iframe {
 }
 .poster-subtitle {
   width: 400px;
-  margin-top: 0;
   margin-bottom: 30px;
-  font-size: 40px;
 }
 .poster-brief {
   width: 600px;
