@@ -3,9 +3,9 @@
 }
 body {
   margin: 0;
-  background-color: #F9EDDC;
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 700;
+  background-color: #FFFBF3;
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -15,7 +15,8 @@ header, #header-home {
   height: 70px;
   font-weight: 800;
   font-size: 15px;
-  background-color: rgba(249, 237, 220, 0.8);
+  /*background-color: rgba(29, 31, 90, 0.8);*/
+  /*background-color: #CAA1EB;*/
   text-transform: uppercase;
   display: flow-root;
   margin: 0px auto;
@@ -54,11 +55,11 @@ nav {
   border: none;
   padding: 25px 60px;
   margin-right: 20px;
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 700;
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
-  color: #2C2130;
+  color: #FFFBF3;
   transition: 0.4s;
 }
 /* Dropdown Content (Hidden by Default) */
@@ -66,9 +67,9 @@ nav {
   font-size: 14px;
   display: none;
   position: absolute;
-  background-color: #EADBC7;
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 700;
+  background-color: #CAA1EB;
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
   min-width: 173px;
@@ -79,9 +80,9 @@ nav {
   font-size: 14px;
   display: none;
   position: absolute;
-  background-color: #EADBC7;
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 700;
+  background-color: #CAA1EB;
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: 1px;
   min-width: 173px;
@@ -91,14 +92,14 @@ nav {
 
 /* Links inside the dropdown */
 .dropdown-content-home a {
-  color: #2C2130;
+  color: #FFFBF3;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   transition: 0.4s;
 }
 .dropdown-content a {
-  color: #2C2130;
+  color: #FFFBF3;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -107,12 +108,12 @@ nav {
 
 /* Change color of dropdown links on hover */
 .dropdown-content-home a:hover {
-  background-color: #DCB6D7;
-  color: #2C2130;
+  background-color: #92d2f5;
+  color: #1D1F5A;
 }
 .dropdown-content a:hover {
-  background-color: #DCB6D7;
-  color: #2C2130;
+  background-color: #92d2f5;
+  color: #1D1F5A;
 }
 
 /* Show the dropdown menu on hover */
@@ -133,7 +134,7 @@ nav {
 }
 .home-bg {
   width: 100%;
-  /*background-color: green;*/
+  background-color: #1D1F5A;
   margin: 0px;
   padding-top: 200px;
   padding-bottom: 100px;
@@ -147,7 +148,7 @@ h1 {
   width: 70vw;
   max-width: 900px;
   margin: 0px;
-  color: #2C2130;
+  color: #CAA1EB;
 }
 .featured-wrap {
   margin: 0px auto;
@@ -158,6 +159,7 @@ h1 {
   margin-left: 118px;
   margin-right: 118px;
   margin-bottom: 50px;
+  margin-top: 100px;
 }
 .feat-image-cont {
   background-color: #EADBC7;
@@ -251,8 +253,9 @@ h1 {
   }
 }*/
 h2 {
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 700;
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 60px;
   color:#2C2130;
   margin: 0px auto;
@@ -261,8 +264,9 @@ h2 {
 }
 
 h3 {
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 700;
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 40px;
   margin: 0px;
   margin-bottom: 10px;
@@ -292,11 +296,14 @@ p {
   color: #2C2130;
 }
 .by-me {
-  font-family: "Averia Sans Libre", sans-serif;
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 ul {
-  font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 700;
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 18px;
   color: #2C2130;
   line-height: 2;
@@ -399,9 +406,10 @@ ul {
   border-radius: 5px;
   background-color: #DCB6D7;
   color: #2C2130;
-  font-family: "Averia Sans Libre", sans-serif;
+  font-family: "brevia", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   font-size: 16px;
-  font-weight: 700;
   border: none;
   display: inline-block;
 }
@@ -759,7 +767,7 @@ iframe {
 .footer-container {
   padding: 0;
   margin: 0;
-  background-color: #EADBC7;
+  background-color: #1D1F5A;
   padding-bottom: 4rem;
 }
 .footer {
