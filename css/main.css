@@ -46,7 +46,7 @@ nav {
   font-size: 20px;
   position: absolute;
   top: 0px;
-  left: 140px;
+  left: 130px;
   color: #1D1F5A;
 }
 .by-me-home {
@@ -54,8 +54,8 @@ nav {
   font-size: 20px;
   position: absolute;
   top: 0px;
-  left: 140px;
-  color: #FFFBF3;
+  left: 130px;
+  color: #CAA1EB;
 }
 /* Dropdown Button */
 /* The container <div> - needed to position the dropdown content */
@@ -154,6 +154,9 @@ nav {
   text-decoration: underline;
   color: #403282;
 }
+.dropdown:hover .dropbtn-home {
+  text-decoration: underline;
+}
 
 .gif-container {
   width: 100vw;
@@ -222,8 +225,8 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  color: #F9EDDC;
-  font-size: 30px;
+  color: #FFFBF3;
+  font-size: 2vw;
 }
 #social-bg img {
   width: 700px;
@@ -255,6 +258,7 @@ h1 {
   border: none;
   display: inline-block;
   transition: 0.4s;
+  margin-top: 15px;
 }
 .about-home-bg {
   width: 100vw;
@@ -353,7 +357,7 @@ h3 {
   font-size: 40px;
   margin: 0px;
   margin-bottom: 10px;
-  color:#2C2130;
+  color: #1D1F5A;
 }
 h4 {
   font-family: "Jost", sans-serif;
@@ -361,89 +365,106 @@ h4 {
   font-size: 25px;
   margin: 0px;
   margin-bottom: 10px;
-  color:#2C2130;
+  color: #1D1F5A;
 }
 h5 {
-  font-family: "Jost", sans-serif;
+  font-family: "agenda", sans-serif;
   font-weight: 400;
+  font-style: normal;
   font-size: 16px;
-  color: #2C2130;
+  color: #1D1F5A;
   margin: 0px;
   font-style: italic;
 }
 p {
-  font-family: "Jost", sans-serif;
+  font-family: "agenda", sans-serif;
   font-weight: 400;
+  font-style: normal;
   font-size: 17px;
   line-height: 2;
-  color: #2C2130;
+  color: #1D1F5A;
 }
-.by-me {
+.by-me, .by-me-home {
   font-family: "brevia", sans-serif;
   font-weight: 500;
   font-style: normal;
 }
-ul {
-  font-family: "brevia", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 18px;
-  color: #2C2130;
-  line-height: 2;
-  padding: 0;
-  margin: 0;
-}
-/*#company-name {
-  position: absolute;
-  top: 400px;
-  left: -275px;
-  transform: rotate(-90deg);
-  /* Safari */
-  -webkit-transform: rotate(-90deg);
-  /* Firefox */
-  -moz-transform: rotate(-90deg);
-  /* IE */
-  -ms-transform: rotate(-90deg);
-  /* Opera */
-  -o-transform: rotate(-90deg);
-/*  animation: glow 2s ease-in-out infinite alternate;
-}*/
-#my-name {
-  font-size: 16px;
-  float: left;
-  font-weight: 400;
-  position: absolute;
-  top: 30px;
-  right: 60px;
-  z-index: 3;
-}
+
+
 
 .label-wrapper {
   width: 100vw;
   height: auto;
-/*  background-color: blue;*/
+  margin-top: 150px;
+  /*background-color: blue;*/
 }
 .sub-page-label {
-
-  margin-bottom: 50px;
+  margin: 0;
   margin-left: 118px;
+  margin-bottom: 50px;
 }
 .sub-page-label-2 {
-  margin-top: 100px;
+  margin: 0;
   margin-left: 118px;
 }
+
+
+/*PROJECTS*/
+.projects-wrap {
+  margin: 0px auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  width: calc(100% - 250px);
+  margin-left: 118px;
+  margin-right: 118px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+.projects-image-cont {
+  background-color: #EADBC7;
+  width: 100%;
+  height: 20vw;
+  /*height: 400px; ---- keep if you want the squares to maintain height while having responsive width*/
+  position: relative;
+  text-align: center;
+}
+.projects-image-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.projects-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(44, 33, 48, 0.8);
+}
+.projects-image-cont:hover .projects-overlay {
+  opacity: 1;
+}
+.year {
+  margin-left: 118px;
+  margin-bottom: 20px;
+}
+
 
 /*BIB*/
 .content-wrap {
   width: 85%;
-  height: 600px;
+  height: 1900px;
   margin-left: 118px;
   margin-top: 175px;
   margin-bottom: 100px;
   /*background-color: green;*/
 }
 .left, .right {
-  height: 1000px;
   float: left;
 }
 .left {
@@ -453,11 +474,12 @@ ul {
   margin-right: 50px;
 }
 .right { 
-  width: calc(70% - 50px);
+  width: calc(70% - 200px);
+  margin-left: 70px;
   /*background-color: blue;*/
 }
 .right img {
-  width: 800px;
+  width: 100%;
   margin-bottom: 20px;
 }
 /*CASE STUDY*/
@@ -580,45 +602,6 @@ ul {
   object-fit: cover;
 }
 
-/*PROJECTS*/
-.projects-decor {
-  width: 1300px;
-  height: auto;
-  opacity: 10%;
-  position: absolute;
-  top: 200px;
-  right: -300px;
-  transform: rotate(-30deg);
-}
-.projects-content {
-  width: 80%;
-  height: 1000px;
-  margin: 0px auto;
-/*  background-color: grey;*/
-}
-.year-wrap {
-  width: 100%;
-/*  height: 300px;*/
-/*  background-color: darkred;*/
-}
-.year-wrap h3 {
-  font-size: 25px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 15px;
-}
-.year {
-  width: 80%;
-  height: 100%;
-  margin-top: 50px;
-}
-/*.year-left {
-  background-color: darkgreen;
-}
-.year-right {
-  background-color: purple;
-}
-*/
 
 /*FRACTAL NOISE*/
 .video-wrapper {
@@ -941,6 +924,7 @@ a:active {
   background-color: #CAA1EB;
 }
 .download-btn:hover {
+  color: #1D1F58;
   background-color: #92D2F5;
 }
 .quick-links a {
@@ -950,7 +934,7 @@ a:active {
   color: #FFFBF3;
 }
 .quick-links a:hover {
-  color: #296AC8;
+  color: #92d2f5;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -983,6 +967,9 @@ a:active {
   .about-home-bg {
     height: 900px;
   }
+  .content-wrap {
+    height: 3000px;
+  }
   .left, .right {
     float: none;
     width: 100%;
@@ -992,7 +979,9 @@ a:active {
     margin-bottom: 50px;
   }
   .right {
+    width: 100%;
     height: auto;
+    margin-left: 0;
   }
   .right img {
     width: 100%;
