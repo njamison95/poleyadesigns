@@ -464,19 +464,25 @@ p {
   margin-bottom: 100px;
   /*background-color: green;*/
 }
+.content-wrap img {
+  width: 100%;
+  margin-bottom: 70px;
+}
 .left, .right {
-  float: left;
+  margin-bottom: 50px;
 }
 .left {
-  width: 30%;
+  width: 35%;
   max-width: 600px;
   /*background-color: red;*/
   margin-right: 50px;
+  float: left;
 }
 .right { 
   width: calc(70% - 200px);
   margin-left: 70px;
   /*background-color: blue;*/
+  float: right;
 }
 .right img {
   width: 100%;
@@ -484,6 +490,9 @@ p {
 }
 #content-2 {
   height: 75vw;
+}
+#content-3 {
+  height: 180vw;
 }
 #content-5 {
   height: 160vw;
@@ -953,7 +962,7 @@ a:active {
     height: 900px;
   }
   .content-wrap {
-    height: 3000px;
+    height: 260vw;
   }
   .left, .right {
     float: none;
