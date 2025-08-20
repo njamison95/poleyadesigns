@@ -226,7 +226,7 @@ h1 {
   transform: translate(-50%, -50%);
   z-index: 2;
   color: #FFFBF3;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 #social-bg img {
   width: 700px;
@@ -458,7 +458,7 @@ p {
 /*BIB*/
 .content-wrap {
   width: 85%;
-  height: 1900px;
+  height: 112vw;
   margin-left: 118px;
   margin-top: 175px;
   margin-bottom: 100px;
@@ -481,6 +481,12 @@ p {
 .right img {
   width: 100%;
   margin-bottom: 20px;
+}
+#content-2 {
+  height: 75vw;
+}
+#content-5 {
+  height: 160vw;
 }
 /*CASE STUDY*/
 #case-study-title h2 {
@@ -612,34 +618,13 @@ p {
 .fractal-video {
   width: 100%;
 }
-/*TYPE CLASS CARDS*/
-.grid-wrapper {
-  max-width: 80%;
-  margin-left: 10%;
-  margin-right: 50px;
-}
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 1%;
-  column-gap: 1%;
-  margin-bottom: 30vw;
-}
-.card-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
+
 /*OTHER*/
-.bib-wrapper, .menu-wrapper, .redirect-wrapper, .moth-wrapper {
+.menu-wrapper, .redirect-wrapper, .moth-wrapper {
   max-width: 80%;
   margin: 0px auto;
 }
-.bib-wrapper img {
-  width: 100%;
-  margin-bottom: 30px;
-}
+
 .menu-wrapper img {
   width: 100%;
   margin-bottom: 30px;
