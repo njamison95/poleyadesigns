@@ -463,7 +463,7 @@ p {
   margin-left: 118px;
   margin-top: 175px;
   margin-bottom: 100px;
-  background-color: green;
+  /*background-color: green;*/
 }
 .content-wrap img {
   width: 100%;
@@ -475,13 +475,13 @@ p {
 .left {
   width: 30%;
   max-width: 600px;
-  background-color: red;
+  /*background-color: red;*/
   margin-right: 50px;
   float: left;
 }
 .right { 
   width: 80%;
-  background-color: blue;
+  /*background-color: blue;*/
   float: right;
 }
 .right img {
