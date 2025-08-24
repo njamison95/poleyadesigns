@@ -190,7 +190,6 @@ h1 {
   width: calc(100% - 250px);
   margin-left: 118px;
   margin-right: 118px;
-  margin-bottom: 100px;
   margin-top: 100px;
 }
 .feat-image-cont {
@@ -262,16 +261,19 @@ h1 {
 }
 .about-home-bg {
   width: 100vw;
-  height: 775px;
+  height: 55vw;
   /*background-color: red;*/
   background-color: #FFFBF3;
-  padding-top: 100px;
 }
 .about-home-contents {
-  width: 80%;
-  height: 80%;
-  margin-left: 118px;
+  width: 100vw;
+  margin: 0;
   /*background-color: blue;*/
+}
+.about-home-contents img {
+  width: 100%;
+  margin: 0;
+  /*border: 1px solid black;*/
 }
 .about-home-photo {
   width: 40%;
@@ -961,23 +963,6 @@ a:active {
     margin-top: 30px;
   }
 }
-@media screen and (max-width: 1071px) {
-  .about-home-bg {
-    height: 1200px;
-  }
-  .about-home-contents {
-    margin-right: 30px;
-  }
-  .about-home-photo {
-    float: none;
-  }
-  .about-home-text {
-    margin-left: 0;
-    margin-top: 30px;
-    width: 100%;
-    float: none;
-  }
-}
 @media screen and (max-width: 863px) {
   .year-wrap {
     margin: 0px auto;
@@ -1015,16 +1000,6 @@ a:active {
   }
   .tempest-image {
     margin-bottom: 60px;
-  }
-}
-@media screen and (max-width: 684px) {
-  .about-home-contents {
-    margin-left: 7vw;
-  }
-}
-@media screen and (max-width: 604px) {
-  .about-home-bg {
-    height: 1600px;
   }
 }
 @media screen and (max-width: 600px) {
