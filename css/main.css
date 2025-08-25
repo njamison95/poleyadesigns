@@ -458,6 +458,11 @@ p {
 
 
 /*BIB*/
+.content-bg {
+  width: 100vw;
+  height: flex;
+  background-color: red;
+}
 .content-wrap {
   width: 85%;
   /*height: 112vw;*/
@@ -465,18 +470,28 @@ p {
   margin-left: 118px;
   margin-top: 175px;
   margin-bottom: 100px;
-  /*background-color: green;*/
+  background-color: green;
+}
+.content-wrap-2 {
+  width: 85vw;
+  height: flex;
+  display: flex;
+  margin-left: 118px;
+  background-color: green;
 }
 .content-wrap img {
   width: 100%;
   margin-bottom: 70px;
+}
+.content-wrap-2 img {
+  width: 40%;
 }
 .left, .right {
   margin-bottom: 50px;
 }
 .left {
   width: 30%;
-  max-width: 600px;
+  max-width: 375px;
   /*background-color: red;*/
   margin-right: 50px;
   float: left;
@@ -484,13 +499,31 @@ p {
 .right { 
   width: 80%;
   /*background-color: blue;*/
-  float: right;
+  /*float: right;*/
 }
 .right img {
   width: 100%;
   margin-bottom: 20px;
 }
-
+.left-2 {
+  width: 30%;
+  max-width: 375px;
+  /*background-color: red;*/
+  margin-right: 25vw;
+  float: left;
+}
+.right-2 {
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  height: flex;
+  margin: 0;
+  background-color: purple;
+  float: right;
+}
+.right-2 img {
+  width: 100%;
+}
 /*CASE STUDY*/
 #case-study-title h2 {
   /*font-weight: 700;*/
