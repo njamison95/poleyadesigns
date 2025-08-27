@@ -461,7 +461,7 @@ p {
 .content-bg {
   width: 100vw;
   height: flex;
-  background-color: red;
+  /*background-color: red;*/
 }
 .content-wrap {
   width: 85%;
@@ -472,19 +472,18 @@ p {
   margin-bottom: 100px;
   /*background-color: green;*/
 }
-.content-wrap-2 {
-  width: 85vw;
-  height: flex;
-  display: flex;
-  margin-left: 118px;
-  /*background-color: green;*/
-}
 .content-wrap img {
   width: 100%;
   margin-bottom: 70px;
 }
+.content-wrap-2 {
+  margin: 0;
+  width: 100vw;
+  height: flex;
+}
 .content-wrap-2 img {
-  width: 40%;
+  margin: 0;
+  width: 100%;
 }
 .left, .right {
   margin-bottom: 50px;
@@ -505,25 +504,7 @@ p {
   width: 100%;
   margin-bottom: 20px;
 }
-.left-2 {
-  width: 30%;
-  max-width: 375px;
-  /*background-color: red;*/
-  margin-right: 25vw;
-  float: left;
-}
-.right-2 {
-  width: 100%;
-  max-width: 500px;
-  min-width: 300px;
-  height: flex;
-  margin: 0;
-  /*background-color: purple;*/
-  float: right;
-}
-.right-2 img {
-  width: 100%;
-}
+
 /*CASE STUDY*/
 #case-study-title h2 {
   /*font-weight: 700;*/
