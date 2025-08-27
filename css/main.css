@@ -470,14 +470,14 @@ p {
   margin-left: 118px;
   margin-top: 175px;
   margin-bottom: 100px;
-  background-color: green;
+  /*background-color: green;*/
 }
 .content-wrap-2 {
   width: 85vw;
   height: flex;
   display: flex;
   margin-left: 118px;
-  background-color: green;
+  /*background-color: green;*/
 }
 .content-wrap img {
   width: 100%;
@@ -518,7 +518,7 @@ p {
   min-width: 300px;
   height: flex;
   margin: 0;
-  background-color: purple;
+  /*background-color: purple;*/
   float: right;
 }
 .right-2 img {
