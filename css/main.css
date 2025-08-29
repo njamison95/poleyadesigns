@@ -76,6 +76,7 @@ nav {
   font-style: normal;
   letter-spacing: 1px;
   color: #1D1F5A;
+  text-underline-offset: 8px;
   transition: 0.4s;
 }
 .dropbtn-home {
@@ -89,6 +90,7 @@ nav {
   font-style: normal;
   letter-spacing: 1px;
   color: #FFFBF3;
+  text-underline-offset: 8px;
   transition: 0.4s;
 }
 /* Dropdown Content (Hidden by Default) */
@@ -151,7 +153,7 @@ nav {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  text-decoration: underline;
+  text-decoration: underline 2px;
   color: #403282;
 }
 .dropdown:hover .dropbtn-home {
@@ -425,6 +427,7 @@ p {
   margin-right: 118px;
   margin-bottom: 100px;
   margin-top: 30px;
+
 }
 .projects-image-cont {
   background-color: #EADBC7;
@@ -803,7 +806,7 @@ iframe {
   padding: 0;
   margin: 0;
   background-color: #1D1F5A;
-  padding-bottom: 4rem;
+  /*padding-bottom: 4rem;*/
 }
 .footer {
   padding: 0;
@@ -813,6 +816,8 @@ iframe {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-top: 30px;
+  /*background-color: blue;*/
 }
 .footer-heading-footer-1, .footer-heading-footer-2, .footer-heading-footer-3, .footer-heading-footer-4, .footer-heading-footer-5 {
   display: flex;
@@ -838,6 +843,9 @@ h6 {
 .footer-heading-footer-1 img {
   width: 200px;
   height: auto;
+  position: relative;
+  top: -30px;
+  left: 0;
 }
 .icon-container {
   width: 40px;
@@ -856,7 +864,7 @@ h6 {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 /*PRIDE*/
