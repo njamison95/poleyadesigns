@@ -365,6 +365,10 @@ h3 {
   margin-bottom: 10px;
   color: #1D1F5A;
 }
+.campaign-title {
+  margin-left: 118px;
+  margin-bottom: 20px;
+}
 h4 {
   font-family: "Jost", sans-serif;
   font-weight: 700;
@@ -1008,6 +1012,9 @@ a:active {
     margin-left: 3vw;
   }
   .gmu-container {
+    margin-left: 3vw;
+  }
+  .campaign-title {
     margin-left: 3vw;
   }
   ul {
