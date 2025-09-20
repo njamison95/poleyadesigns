@@ -291,23 +291,6 @@ h1 {
   margin: 0;
   /*border: 1px solid black;*/
 }
-.about-home-photo {
-  width: 40%;
-  min-width: 300px;
-  float: left;
-  /*background-color: blue;*/
-}
-.about-home-photo img{
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-.about-home-text {
-  width: 50%;
-  margin-left: 10%;
-  float: left; 
-  /*background-color: red;*/
-}
 
 /*CAROUSEL
 .carousel {
@@ -377,9 +360,10 @@ h3 {
   margin-bottom: 10px;
   color: #1D1F5A;
 }
-.campaign-title {
-  margin-left: 118px;
-  margin-bottom: 20px;
+#visual-designer {
+  font-size: 25px;
+  margin-top: 10px;
+  color: #92d2f5;
 }
 h4 {
   font-family: "Jost", sans-serif;
@@ -833,6 +817,7 @@ iframe {
   flex-wrap: wrap;
   margin: 0 auto;
   margin-top: 30px;
+  padding-bottom: 30px;
   /*background-color: blue;*/
 }
 .footer-heading-footer-1, .footer-heading-footer-2, .footer-heading-footer-3, .footer-heading-footer-4, .footer-heading-footer-5 {
@@ -1034,9 +1019,7 @@ a:active {
   }
 }
 @media screen and (max-width: 1056px) {
-  .slogan h1 {
-    font-size: 45px;
-  }
+
 }
 @media screen and (max-width: 910px) {
   .bottom-left {
@@ -1071,11 +1054,20 @@ a:active {
   }
 }
 @media screen and (max-width: 700px) {
-  .slogan {
+    .slogan h1 {
+  font-size: 55px;
+  }
+  #visual-designer {
+    font-size: 16px;
+  }
+  .featured-title h2 {
+    font-size: 35px;
+  }
+  .slogan, .featured-title {
     margin-left: 3vw;
     margin-right: 3vw;
   }
-  .featured-wrap {
+  .featured-wrap, .sections-wrap {
     width: calc(100% - 6vw);
     margin-left: 3vw;
     margin-right: 3vw;
