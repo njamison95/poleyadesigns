@@ -26,11 +26,11 @@ header, #header-home {
 }
 header:hover {
   background-color: #CAA1EB;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 #header-home:hover {
   background-color: #403282;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 nav {
   float: right;
@@ -77,7 +77,7 @@ nav {
   letter-spacing: 1px;
   color: #1D1F5A;
   text-underline-offset: 8px;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 .dropbtn-home {
   background-color: transparent;
@@ -91,7 +91,7 @@ nav {
   letter-spacing: 1px;
   color: #FFFBF3;
   text-underline-offset: 8px;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
@@ -105,7 +105,7 @@ nav {
   letter-spacing: 1px;
   min-width: 173px;
   z-index: 1;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 .dropdown-content-home {
   font-size: 14px;
@@ -118,7 +118,7 @@ nav {
   letter-spacing: 1px;
   min-width: 173px;
   z-index: 1;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 /* Links inside the dropdown */
@@ -127,14 +127,14 @@ nav {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 .dropdown-content a {
   color: #FFFBF3;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 /* Change color of dropdown links on hover */
@@ -203,6 +203,7 @@ h1 {
   background-color: #403282;
   width: 100%;
   height: 20rem;
+  border-radius: 1%;
   /*height: 400px; ---- keep if you want the squares to maintain height while having responsive width*/
   position: relative;
   text-align: center;
@@ -210,11 +211,13 @@ h1 {
 .feat-image-cont img {
   width: 100%;
   height: 100%;
+  border-radius: 1%;
   object-fit: cover;
 }
 .sections-image-cont img {
   width: 100%;
   height: 100%;
+  border-radius: 1%;
   object-fit: cover;
 }
 .overlay {
@@ -226,6 +229,7 @@ h1 {
   height: 100%;
   width: 100%;
   opacity: 0;
+  border-radius: 1%;
   transition: .5s ease;
   background-color: rgba(44, 33, 48, 0.8)
 }
@@ -511,23 +515,8 @@ p {
   margin-bottom: 20px;
 }
 
-/*CASE STUDY*/
-#case-study-title h2 {
-  /*font-weight: 700;*/
-  padding-top: 80px;
-  color: #F9EDDC;
-}
-#case-study-subtitle {
-  font-size: 50px;
-  color: #F9EDDC;
-}
-.case-study-text {
-  color: #F9EDDC;
-}
-.case-study-bg {
-  width: 100vw;
-  height: 1000px;
-  background-color: #2C2130;
+.campaign-title {
+  margin-left: 118px;
 }
 .home-content-text-right {
   max-width: 460px;
