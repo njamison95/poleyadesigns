@@ -429,14 +429,14 @@ p {
   width: calc(100% - 250px);
   margin-left: 118px;
   margin-right: 118px;
-  margin-bottom: 100px;
-  margin-top: 30px;
+  margin-top: 20px;
 
 }
 .projects-image-cont {
   background-color: #EADBC7;
   width: 100%;
-  height: 20vw;
+  height: 20rem;
+  border-radius: 1%;
   /*height: 400px; ---- keep if you want the squares to maintain height while having responsive width*/
   position: relative;
   text-align: center;
@@ -444,6 +444,7 @@ p {
 .projects-image-cont img {
   width: 100%;
   height: 100%;
+  border-radius: 1%;
   object-fit: cover;
 }
 .projects-overlay {
@@ -455,15 +456,12 @@ p {
   height: 100%;
   width: 100%;
   opacity: 0;
+  border-radius: 1%;
   transition: .5s ease;
   background-color: rgba(44, 33, 48, 0.8);
 }
 .projects-image-cont:hover .projects-overlay {
   opacity: 1;
-}
-.year {
-  margin-left: 118px;
-  margin-bottom: 20px;
 }
 
 
@@ -517,25 +515,9 @@ p {
 
 .campaign-title {
   margin-left: 118px;
+  margin-top: 40px;
 }
-.home-content-text-right {
-  max-width: 460px;
-  margin-left: 7vw;
-  margin-top: 100px;
-  margin-bottom: 30px;
-  margin-right: 40px;
-  float: left;
-}
-.portrait-wrap-left {
-  float: left;
-  max-width: 400px;
-  margin-left: 20vw;
-  margin-right: 40px;
-  margin-top: 100px;
-}
-.portrait-wrap-left img {
-  width: 100%;
-}
+
 /*LOGOS*/
 .logo-text {
   width: 100%;
@@ -601,9 +583,10 @@ p {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 50px;
+  width: calc(100% - 250px);
+  margin-left: 118px;
+  margin-right: 118px;
+  margin-top: 20px;
 }
 
 .new-image-cont img {
@@ -620,43 +603,6 @@ p {
   object-fit: cover;
 }
 
-
-/*FRACTAL NOISE*/
-.video-wrapper {
-  max-width: 80%;
-  margin: 0px auto;
-  margin-bottom: 100px;
-}
-.fractal-video {
-  width: 100%;
-}
-
-/*OTHER*/
-.menu-wrapper, .redirect-wrapper, .moth-wrapper {
-  max-width: 80%;
-  margin: 0px auto;
-}
-
-.menu-wrapper img {
-  width: 100%;
-  margin-bottom: 30px;
-}
-.moth-wrapper img {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-/*SOCIAL MEDIA*/
-.sm-grid-wrapper {
-  max-width: 80%;
-  margin-left: 200px;
-  margin-right: 50px;
-}
-.sm-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2%;
-}
 
 /*TEMPEST*/
 .tempest-image, .tempest-video {
@@ -703,7 +649,6 @@ iframe {
 .slide-wrap {
   width: 100%;
   height: 1500px;
-  background-color: red;
 }
 .slide-wrapper {
   width: 75vw;
@@ -715,33 +660,23 @@ iframe {
   width: 100%;
   border: 1px solid #2c2130;
 }
+
 /*REDIRECT*/
-.redirect-wrap {
-/*  background-color: blueviolet;*/
+.presentation-wrap {
   width: 100%;
-  height: 600px;
+  height: flex;
 }
-#what-is-redirect {
+.presentation-image-wrap {
   width: 61vw;
-  height: 34.16vw;
-  margin-left: 5vw;
-  margin-bottom: 50px;
-  float: left;
-}
-#what-is-redirect img {
-  width: 100%;
-  height: 100%;
-}
-.redirect-image-wrap {
-  width: 61vw;
-  height: 34.16vw;
+  height: flex;
   margin: 0px auto;
   margin-bottom: 50px;
 }
-.redirect-image-wrap img {
+.presentation-image-wrap img {
   width: 100%;
   height: 100%;
 }
+
 /*FILM POSTER*/
 .poster-container {
   width: 100vw;
@@ -945,15 +880,6 @@ a:active {
 }
 
 /*MEDIA QUERIES*/
-
-@media screen and (max-width: 1098px) {
-  .list-wrapper {
-    width: 100%;
-  }
-  .year {
-    margin-bottom: 0px;
-  }
-}
 @media screen and (max-width: 1686px) {
   .poster-container {
     height: 2100px;
@@ -966,6 +892,7 @@ a:active {
     float: left;
   }
 }
+
 @media screen and (max-width: 1310px) {
   .poster-container {
     height: 2850px;
@@ -978,17 +905,12 @@ a:active {
     margin-top: 30px;
   }
 }
+
 @media screen and (max-width: 1141px) {
   .by-me-home, .by-me {
     color: transparent;
   }
   .content-wrap {
-    margin-left: 3vw;
-  }
-  .sub-page-label {
-    margin-left: 3vw;
-  }
-  .menu-wrapper {
     margin-left: 3vw;
   }
   .tempest-video, .tempest-image {
@@ -997,44 +919,33 @@ a:active {
   .poster-wrapper, .poster-desc {
     margin-left: 3vw;
   }
-  .gmu-container {
-    margin-left: 3vw;
-  }
-  .campaign-title {
-    margin-left: 3vw;
-  }
   ul {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 1056px) {
 
+@media screen and (max-width: 1098px) {
+  .list-wrapper {
+    width: 100%;
+  }
 }
+
 @media screen and (max-width: 910px) {
   .bottom-left {
     font-size: 20px;
   }
-}
-@media screen and (max-width: 863px) {
-  .year-wrap {
-    margin: 0px auto;
-/*    background-color: darkred;*/
+  .content-wrap {
+    display: inline-block;
   }
-  .year-left, .year-right {
+  .left, .right {
     width: 100%;
-    margin-bottom: 50px;
-    float: none;
-    padding-right: none;
+  }
+  .right img {
+    margin-bottom: 0;
   }
 }
+
 @media screen and (max-width: 833px) {
-  .card-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .card-grid {
-    row-gap: 0.25%;
-    margin-bottom: 60vw;
-  }
   .pride-wrapper-1 {
     float: none;
   }
@@ -1042,9 +953,27 @@ a:active {
     margin-top: 30px;
   }
 }
+
+@media screen and (max-width: 740px) {
+  .dropbtn {
+    padding: 25px 30px;
+    margin-right: 0;
+  }
+  .tempest-image {
+    margin-bottom: 60px;
+  }
+  .presentation-image-wrap {
+    width: 95%;
+    margin-bottom: 0;
+  }
+  .presentation-image-wrap img {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 700px) {
-    .slogan h1 {
-  font-size: 55px;
+  .slogan h1 {
+    font-size: 55px;
   }
   #visual-designer {
     font-size: 16px;
@@ -1056,7 +985,16 @@ a:active {
     margin-left: 3vw;
     margin-right: 3vw;
   }
-  .featured-wrap, .sections-wrap {
+  .sub-page-label, .campaign-title {
+    margin-left: 3vw;
+  }
+  .sub-page-label h2 {
+    font-size: 40px;
+  }
+  .campaign-title h3{
+    font-size: 25px;
+  }
+  .featured-wrap, .sections-wrap, .projects-wrap, .gmu-container {
     width: calc(100% - 6vw);
     margin-left: 3vw;
     margin-right: 3vw;
@@ -1065,16 +1003,11 @@ a:active {
   .featured-wrap img {
     width: 100%;
   }
-}
-@media screen and (max-width: 740px) {
-  .dropbtn {
-    padding: 25px 30px;
-    margin-right: 0;
-  }
-  .tempest-image {
-    margin-bottom: 60px;
+  .projects-wrap img {
+    width: 100%;
   }
 }
+
 @media screen and (max-width: 575px) {
   .footer {
     justify-content: left;
