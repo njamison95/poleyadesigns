@@ -594,6 +594,7 @@ p {
   display: block;
   aspect-ratio: 4/5;
   object-fit: cover;
+  border-radius: 1%;
 }
 
 .square-image-cont img {
@@ -601,6 +602,7 @@ p {
   display: block;
   aspect-ratio: 1/1;
   object-fit: cover;
+  border-radius: 1%;
 }
 
 
