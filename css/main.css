@@ -963,9 +963,16 @@ a:active {
 }
 
 @media screen and (max-width: 740px) {
-  .dropbtn {
+  .dropbtn, .dropbtn-home {
     padding: 25px 30px;
     margin-right: 0;
+  }
+  .dropdown-content, .dropdown-content-home {
+    position: absolute;
+    right: 0px;
+  }
+  .logo {
+    margin-left: 20px;
   }
   .tempest-image {
     margin-bottom: 60px;
@@ -1023,13 +1030,13 @@ a:active {
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 580px) {
   .footer {
     justify-content: left;
   }
 }
 
-@media screen and (max-width: 453px) {
+@media screen and (max-width: 431px) {
   .footer-heading-footer-1 {
     margin-left: 0;
   }
