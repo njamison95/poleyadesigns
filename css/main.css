@@ -267,20 +267,6 @@ h1 {
   height: auto;
 }
 /*ABOUT ME*/
-.download-btn {
-  padding: 16px 32px;
-  border-radius: 5px;
-  background-color: #CAA1EB;
-  color: #1D1F5A;
-  font-family: "brevia", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 16px;
-  border: none;
-  display: inline-block;
-  transition: 0.4s;
-  margin-top: 15px;
-}
 .about-home-bg {
   width: 100vw;
   height: 55vw;
@@ -352,7 +338,7 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 60px;
-  color: #403282;
+  color: #296ac8;
   margin: 0px auto;
   margin-top: 100px;
   padding: 0px;
@@ -381,6 +367,7 @@ h4 {
   font-size: 25px;
   margin: 0px;
   margin-bottom: 10px;
+  color: #1D1F5A;
 }
 h5 {
   font-family: "agenda", sans-serif;
@@ -489,9 +476,10 @@ p {
   margin-bottom: 70px;
 }
 .content-wrap-2 {
-  margin: 0;
-  width: 100vw;
-  height: flex;
+  width: 85%;
+  /*height: 112vw;*/
+  display: flex;
+  margin-left: 118px;
 }
 .content-wrap-2 img {
   margin: 0;
@@ -504,7 +492,7 @@ p {
 .left {
   width: 30%;
   max-width: 375px;
-  /*background-color: red;*/
+  background-color: red;
   margin-right: 50px;
   float: left;
 }
@@ -522,7 +510,54 @@ p {
   margin-left: 118px;
   margin-top: 40px;
 }
-
+.campaign-title h3 {
+  font-size: 50px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.campaign-title h5 {
+  font-family: "agenda", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  color: #1D1F5A;
+  margin: 0px;
+  font-style: none;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.left-with-img {
+  width: 550;
+  min-width: 550px;
+  max-width: 550px;
+  margin-right: 50px;
+  float: left;
+}
+.left-image-cont {
+  width: 100%;
+}
+.left-image-cont img {
+  border-radius: 1%;
+}
+.right-text {
+  margin-left: 0px;
+  max-width: 700px;
+}
+.button {
+  padding: 16px 32px;
+  border-radius: 5px;
+  background-color: #CAA1EB;
+  color: #1D1F5A;
+  font-family: "brevia", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  border: none;
+  display: inline-block;
+  transition: 0.4s;
+  margin-top: 15px;
+}
 /*LOGOS*/
 .logo-text {
   width: 100%;
@@ -869,11 +904,11 @@ a:active {
 .case-study-text a:hover {
   color: #DCB6D7;
 }
-.download-btn:link {
+.button:link {
   color: #1D1F58;
   background-color: #CAA1EB;
 }
-.download-btn:hover {
+.button:hover {
   color: #1D1F58;
   background-color: #92D2F5;
 }
