@@ -1025,9 +1025,9 @@ a:active {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 5px;
   }
-  .bottom-left {
+/*  .bottom-left {
     font-size: 18px;
-  }
+  }*/
 }
 
 @media screen and (max-width: 580px) {
