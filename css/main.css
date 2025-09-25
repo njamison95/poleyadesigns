@@ -72,7 +72,7 @@ nav {
   border: none;
   padding: 30px 60px 39px 60px;
   margin-right: 20px;
-  font-family: "brevia", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 1px;
@@ -86,8 +86,8 @@ nav {
   border: none;
   padding: 30px 60px 39px 60px;
   margin-right: 20px;
-  font-family: "brevia", sans-serif;
-  font-weight: 500;
+  font-family: "gantari", sans-serif;
+  font-weight: 600;
   font-style: normal;
   letter-spacing: 1px;
   color: #FFFBF3;
@@ -100,7 +100,7 @@ nav {
   display: none;
   position: absolute;
   background-color: #CAA1EB;
-  font-family: "agenda", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 0.5px;
@@ -113,7 +113,7 @@ nav {
   display: none;
   position: absolute;
   background-color: #CAA1EB;
-  font-family: "agenda", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 0.5px;
@@ -242,7 +242,7 @@ h1 {
   z-index: 2;
   color: #FFFBF3;
   font-size: 22px;
-  font-family: "agenda", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 500;
 }
 #social-bg img {
@@ -357,12 +357,12 @@ h3 {
   font-size: 35px;
   margin-top: 10px;
   color: #92d2f5;
-  font-family: "agenda", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 500;
   letter-spacing: 1px;
 }
 h4 {
-  font-family: "agenda", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 700;
   font-size: 25px;
   margin: 0px;
@@ -370,7 +370,7 @@ h4 {
   color: #1D1F5A;
 }
 h5 {
-  font-family: "agenda", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
@@ -379,11 +379,11 @@ h5 {
   font-style: italic;
 }
 p {
-  font-family: "agenda", sans-serif;
-  font-weight: 400;
+  font-family: "gantari", sans-serif;
+  font-weight: 300;
   font-style: normal;
   font-size: 20px;
-  line-height: 1.25;
+  line-height: 1.5;
   color: #1D1F5A;
 }
 .by-me, .by-me-home {
@@ -492,7 +492,6 @@ p {
 .left {
   width: 30%;
   max-width: 375px;
-  background-color: red;
   margin-right: 50px;
   float: left;
 }
@@ -512,14 +511,16 @@ p {
 }
 .campaign-title h3 {
   font-size: 50px;
-  font-weight: 500;
+  font-family: "brevia", sans-serif;
+  font-weight: 400;
+  line-height: 1.25;
   text-transform: uppercase;
 }
 .campaign-title h5 {
-  font-family: "agenda", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
   color: #1D1F5A;
   margin: 0px;
   font-style: none;
@@ -549,10 +550,10 @@ p {
   border-radius: 5px;
   background-color: #CAA1EB;
   color: #1D1F5A;
-  font-family: "brevia", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 20px;
+  font-size: 15px;
   border: none;
   display: inline-block;
   transition: 0.4s;
@@ -802,7 +803,7 @@ iframe {
   padding: 0;
   margin: 0;
   color: #CAA1EB;
-  font-family: "agenda", sans-serif;
+  font-family: "gantari", sans-serif;
   font-size: 20px;
 }
 h6 {
@@ -831,7 +832,7 @@ h6 {
   height: auto;
 }
 .quick-links {
-  font-family: "agenda", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin: 0;
