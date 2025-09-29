@@ -7,6 +7,7 @@ body {
   font-family: "brevia", sans-serif;
   font-weight: 500;
   font-style: normal;
+  overflow-x: hidden; 
 }
 
 /*header styles*/
@@ -126,6 +127,7 @@ h1 {
   margin: 0;
   margin-top: 5px;
   color: #1D1F5A;
+  text-transform: none;
   transition: 0.4s ease;
 }
 .grid-item h6 {
@@ -260,25 +262,6 @@ h1 {
   transition: .5s ease;
 }
 
-/*ABOUT ME*/
-.about-home-bg {
-  width: 100vw;
-  height: 55vw;
-  /*background-color: red;*/
-  background-color: #FFFBF3;
-}
-.about-home-contents {
-  width: 100vw;
-  margin: 0;
-  margin-bottom: 20px
-  /*background-color: blue;*/
-}
-.about-home-contents img {
-  width: 100%;
-  margin: 0;
-  /*border: 1px solid black;*/
-}
-
 /*CAROUSEL
 .carousel {
   overflow: hidden;
@@ -338,10 +321,10 @@ h2 {
 }
 
 h3 {
-  font-family: "brevia", sans-serif;
+  font-family: "gantari", sans-serif;
   font-weight: 500;
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
   margin: 0px;
   margin-bottom: 10px;
   color: #1D1F5A;
@@ -349,11 +332,14 @@ h3 {
 
 h4 {
   font-family: "gantari", sans-serif;
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
   margin: 0px;
+  margin-left: 2.5%;
   margin-bottom: 10px;
   color: #1D1F5A;
+  text-transform: uppercase;
 }
 h5 {
   font-family: "gantari", sans-serif;
@@ -379,25 +365,69 @@ p {
   font-style: normal;
 }
 
-
-
 .label-wrapper {
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin-left: 200px;
   margin-top: 20px;
   margin-bottom: 50px;
   /*background-color: blue;*/
 }
-/*.sub-page-label {
-  margin: 0;
-
-
+.sub-page-label {
+  width: 100%;
+  height: auto;
 }
-.sub-page-label-2 {
-  margin: 0;
-}*/
 
+.a-project-wrap {
+  width: 100%;
+  height: auto;
+  margin-bottom: 100px;
+}
+.full {
+  width: 95%;
+  height: auto;
+  margin: 0px auto;
+  border-radius: 10px;
+}
+.full img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.double-wrap {
+  width: 95%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(500px, auto);
+  column-gap: 40px;
+  margin: 0px auto;
+  margin-top: 18px;
+}
+.double {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.double-text {
+  width: 100%;
+  height: auto;
+  float: left;
+  max-width: 720px;
+}
+.double img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.double-text p {
+  font-family: "gantari", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #1D1F5A;
+  margin: 0;
+}
 
 /*PROJECTS*/
 .projects-wrap {
@@ -982,6 +1012,9 @@ a:active {
   .grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  .double-text p {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 910px) {
@@ -997,16 +1030,6 @@ a:active {
 }
 
 /*KEEP*/
-
-@media screen and (max-width: 833px) {
-  .pride-wrapper-1 {
-    float: none;
-  }
-  .pride-wrapper-2 {
-    margin-top: 30px;
-  }
-}
-
 @media screen and (max-width: 765px) {
   .dropbtn {
     font-size: 20px;
@@ -1093,6 +1116,18 @@ a:active {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .double-wrap {
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(auto, auto);
+    margin-top: 0px;
+  }
+  .double-text {
+    margin-top: 20px;
+  }
+
 
 @media screen and (max-width: 580px) {
   .footer {
