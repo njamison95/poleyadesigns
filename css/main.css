@@ -332,9 +332,8 @@ h2 {
   font-weight: 700;
   font-style: normal;
   font-size: 60px;
-  color: #296ac8;
+  color: #1D1F5A;
   margin: 0px auto;
-  margin-top: 100px;
   padding: 0px;
 }
 
@@ -385,18 +384,19 @@ p {
 .label-wrapper {
   width: 100vw;
   height: auto;
-  margin-top: 150px;
+  margin-left: 200px;
+  margin-top: 20px;
+  margin-bottom: 50px;
   /*background-color: blue;*/
 }
-.sub-page-label {
+/*.sub-page-label {
   margin: 0;
-  margin-left: 118px;
-  margin-bottom: 50px;
+
+
 }
 .sub-page-label-2 {
   margin: 0;
-  margin-left: 118px;
-}
+}*/
 
 
 /*PROJECTS*/
