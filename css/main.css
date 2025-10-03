@@ -375,7 +375,7 @@ p {
   /*background-color: blue;*/
 }
 .sub-page-label {
-  width: 100%;
+  width: 65%;
   height: auto;
 }
 
@@ -495,14 +495,8 @@ p {
 }
 .content-wrap-2 {
   width: 85%;
-  /*height: 112vw;*/
-  display: flex;
-  margin-left: 118px;
-}
-.content-wrap-2 img {
-  margin: 0;
-  width: 100%;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 70px;
 }
 .content-wrap-3 {
   width: 85%;
@@ -535,6 +529,7 @@ p {
 }
 
 .campaign-title {
+  /*max-width: 70%;*/
   margin-left: 118px;
   margin-top: 40px;
 }
@@ -547,19 +542,19 @@ p {
 }
 .campaign-title h5 {
   font-family: "gantari", sans-serif;
+  max-width: 500px;
   font-weight: 400;
   font-style: normal;
   font-size: 20px;
   color: #1D1F5A;
   margin: 0px;
-  font-style: none;
   margin-top: 50px;
   margin-bottom: 20px;
   line-height: 1.5;
 }
 .left-with-img {
-  width: 550;
-  min-width: 550px;
+  width: 40%;
+  min-width: 300px;
   max-width: 550px;
   margin-right: 50px;
   float: left;
@@ -1056,7 +1051,9 @@ a:active {
     right: 0px;
   }
   .logo {
-    margin-left: 20px;
+    margin-left: 15px;
+    width: 70px;
+    margin-top: 20px;
   }
   .tempest-image {
     margin-bottom: 60px;
@@ -1071,14 +1068,25 @@ a:active {
 }
 
 @media screen and (max-width: 700px) {
-  .sub-page-label, .campaign-title {
+  .dropbtn, .dropdown-content {
+    font-size: 18px;
+  }
+  .sub-page-label {
+    width: 50%;
+    margin-left: -60px;
+  } 
+  .campaign-title {
     margin-left: 3vw;
   }
   .sub-page-label h2 {
-    font-size: 40px;
+    font-size: 30px;
   }
   .campaign-title h3{
     font-size: 25px;
+  }
+  .campaign-title h5 {
+    font-size: 16px;
+    margin-top: 10px;
   }
   .sections-wrap, .projects-wrap, .gmu-container {
     width: calc(100% - 6vw);
@@ -1129,6 +1137,14 @@ a:active {
     margin-top: 20px;
   }
 
+@media screen and (max-width: 470px) {
+  .sub-page-label {
+    opacity: 0;
+  }
+  .content-wrap-2 {
+    margin-top: 130px;
+  }
+}
 
 @media screen and (max-width: 580px) {
   .footer {
