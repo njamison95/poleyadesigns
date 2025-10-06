@@ -473,7 +473,13 @@ p {
 .projects-image-cont:hover .projects-overlay {
   opacity: 1;
 }
-
+.bottom-left {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /*BIB*/
 .content-bg {
@@ -1039,6 +1045,9 @@ a:active {
   .grid-item h6 {
     font-size: 15px;
   }
+  .footer {
+    justify-content: left;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -1064,6 +1073,9 @@ a:active {
   }
   .presentation-image-wrap img {
     width: 100%;
+  }
+  .footer-heading-footer-3, .footer-heading-footer-5 {
+    margin-right: 0px;
   }
 }
 
@@ -1106,6 +1118,15 @@ a:active {
   }*/
 }
 
+@media screen and (max-width: 642px) {
+  .footer {
+    display: grid;
+  }
+  .footer-heading-footer-3 {
+    margin-top: 0;
+  }
+}
+
 @media screen and (max-width: 630px) {
   .logo-home {
     margin-top: 0;
@@ -1146,17 +1167,6 @@ a:active {
   }
 }
 
-@media screen and (max-width: 580px) {
-  .footer {
-    justify-content: left;
-  }
-  .footer-heading-footer-1 {
-    margin-left: 0;
-  }
-  .footer-heading-footer-3 {
-    margin-top: 0;
-  }
-}
 
 @media screen and (max-width: 380px) {
   .neko-logo-container, .psdh-logo-container {
