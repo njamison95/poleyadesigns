@@ -952,9 +952,23 @@ a:active {
 .quick-links a:hover {
   color: #92D2F5;
 }
+
+/*SCROLL BAR*/
 /* width */
 ::-webkit-scrollbar {
-  display: none;
+  width: 1em;
+
+}
+
+/* Track */
+/*::-webkit-scrollbar-track {
+  background: #ECE8DE; 
+}*/
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #CAA1EB; 
+  border-radius: 3px;
 }
 
 /*MEDIA QUERIES*/
