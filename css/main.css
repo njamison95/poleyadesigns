@@ -16,34 +16,124 @@ header {
   width: 100vw;
   display: flow-root;
   margin: 0px auto;
-  position: fixed;
+  position: relative;
   top: 0px;
   z-index: 3;
+  background-color: transparent;
 }
-/*header:hover {
-  background-color: #CAA1EB;
+header:hover {
+  background-color: #FFFBF3;
   transition: 0.4s ease;
-}*/
-/*#header-home:hover {
-  background-color: #403282;
-  transition: 0.4s ease;
-}*/
+}
+
 nav {
   float: right;
+  margin-right: 1.5vw;
+  margin-top: 30px;
 }
-.logo-home {
-  width: 300px;
-  height: auto;
-  margin-left: -30px;
-  margin-top: -30px;
-  rotate: 25deg;
-  float: left;
+
+/* Dropdown Button */
+/* The container <div> - needed to position the dropdown content */
+.menu-item {
+  position: relative;
+  display: inline-block;
+  float: right;
+  transition: 0.4s;
+}
+.dropbtn {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  font-family: "gantari", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #1D1F5A;
+  text-underline-offset: 8px;
   transition: 0.4s ease;
 }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content-home {
+  width: 300px;
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  background-color: #CAA1EB;
+  font-family: "gantari", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  min-width: 173px;
+  z-index: 1;
+  transition: 0.4s ease;
+}
+
+.dropdown-content {
+  width: 300px;
+  font-size: 16px;
+  display: none;
+  position: absolute;
+  background-color: #FFFBF3;
+  font-family: "gantari", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  min-width: 173px;
+  z-index: 1;
+  transition: 0.4s ease;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.4s ease;
+}
+.dropdown-content-home a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: 0.4s ease;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #92d2f5;
+  color: #1D1F5A;
+  transition: 0.4s ease;
+}
+.dropdown-content-home a:hover {
+  background-color: #92d2f5;
+  color: #1D1F5A;
+  transition: 0.4s ease;
+}
+
+/* Show the dropdown menu on hover */
+.menu-item:hover .dropdown-content {
+  display: block;
+  transition: 0.4s ease;
+}
+.menu-item:hover .dropdown-content-home {
+  display: block;
+  transition: 0.4s ease;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.menu-item:hover .dropbtn {
+  text-decoration: underline 2px;
+  color: #403282;
+  transition: 0.4s ease;
+}
+
+
 .logo {
-  width: 100px;
+  /*background-color: green;*/
+  width: 70px;
   margin-left: 40px;
-  margin-top: 20px;
   height: auto;
   float: left;
   transition: 0.4s ease;
@@ -105,26 +195,23 @@ h1 {
   transition: 0.4s ease;
 }
 .grid-item {
-  border-radius: 10px;
   transition: 0.4s ease;
   /*background-color: red;*/
 }
 .featured-img-wrap {
-  border-radius: 10px;
   width: 100%;
   height: 450px;
   background-color: blue;
 }
 .featured-img-wrap img {
-  border-radius: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 .grid-item h3 {
-  font-size: 30px;
+  font-size: 23px;
   font-family: "gantari", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
   margin-top: 5px;
   color: #1D1F5A;
@@ -134,87 +221,13 @@ h1 {
 .grid-item h6 {
   font-size: 18px;
   font-family: "gantari", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   margin: 0;
   margin-bottom: 10px;
   color: #1D1F5A;
   transition: 0.4s ease;
 }
 
-
-
-
-
-
-
-
-/* Dropdown Button */
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  float: right;
-  transition: 0.4s;
-}
-.dropbtn {
-  background-color: transparent;
-  font-size: 25px;
-  border: none;
-  padding: 30px 60px 39px 60px;
-  margin-right: 20px;
-  font-family: "gantari", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-  color: #1D1F5A;
-  text-underline-offset: 8px;
-  transition: 0.4s ease;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  font-size: 20px;
-  display: none;
-  position: absolute;
-  background-color: #CAA1EB;
-  font-family: "gantari", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 0.5px;
-  min-width: 173px;
-  z-index: 1;
-  transition: 0.4s ease;
-}
-
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: #FFFBF3;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  transition: 0.4s ease;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #92d2f5;
-  color: #1D1F5A;
-  transition: 0.4s ease;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-  transition: 0.4s ease;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  text-decoration: underline 2px;
-  color: #403282;
-  transition: 0.4s ease;
-}
 
 
 .gif-container {
@@ -382,18 +395,17 @@ p {
 .a-project-wrap {
   width: 100%;
   height: auto;
+  margin-top: -100px;
   margin-bottom: 100px;
 }
 .full {
-  width: 95%;
+  width: 100%;
   height: auto;
   margin: 0px auto;
-  border-radius: 10px;
 }
 .full img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
 }
 .double-wrap {
   width: 95%;
@@ -419,7 +431,6 @@ p {
 .double img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
 }
 .double-text p {
   font-family: "gantari", sans-serif;
@@ -492,7 +503,7 @@ p {
   /*height: 112vw;*/
   display: flex;
   margin-left: 118px;
-  margin-top: 175px;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 .content-wrap img {
@@ -813,7 +824,7 @@ iframe {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 100px;
   padding-bottom: 30px;
   /*background-color: blue;*/
 }
@@ -834,7 +845,8 @@ iframe {
   margin: 0;
   color: #CAA1EB;
   font-family: "gantari", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 h6 {
   padding: 0;
@@ -863,7 +875,8 @@ h6 {
 }
 .quick-links {
   font-family: "gantari", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
+  text-transform: uppercase;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -955,10 +968,10 @@ a:active {
 
 /*SCROLL BAR*/
 /* width */
-::-webkit-scrollbar {
+/*::-webkit-scrollbar {
   width: 1em;
 
-}
+}*/
 
 /* Track */
 /*::-webkit-scrollbar-track {
@@ -966,10 +979,10 @@ a:active {
 }*/
  
 /* Handle */
-::-webkit-scrollbar-thumb {
+/*::-webkit-scrollbar-thumb {
   background: #CAA1EB; 
   border-radius: 3px;
-}
+}*/
 
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1686px) {
@@ -1015,18 +1028,9 @@ a:active {
 
 /*KEEP*/
 @media screen and (max-width: 1031px) {
-  .slogan h1 {
-    font-size: 70px;
-  }
-  #visual-designer {
-    font-size: 30px;
-  }
   .section-wrap {
     float: left;
     margin-top: 50px;
-  }
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
   }
   .double-text p {
     font-size: 18px;
@@ -1050,14 +1054,11 @@ a:active {
   .dropbtn {
     font-size: 20px;
   }
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .sections li {
     font-size: 20px;
-  }
-  .grid-item h3 {
-    font-size: 20px;
-  }
-  .grid-item h6 {
-    font-size: 15px;
   }
   .footer {
     justify-content: left;
@@ -1076,7 +1077,6 @@ a:active {
   .logo {
     margin-left: 15px;
     width: 70px;
-    margin-top: 20px;
   }
   .tempest-image {
     margin-bottom: 60px;
@@ -1088,15 +1088,12 @@ a:active {
   .presentation-image-wrap img {
     width: 100%;
   }
-  .footer-heading-footer-3, .footer-heading-footer-5 {
+/*  .footer-heading-footer-3, .footer-heading-footer-5 {
     margin-right: 0px;
-  }
+  }*/
 }
 
 @media screen and (max-width: 700px) {
-  .dropbtn, .dropdown-content {
-    font-size: 18px;
-  }
   .sub-page-label {
     width: 50%;
     margin-left: -60px;
@@ -1127,18 +1124,15 @@ a:active {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 5px;
   }
-/*  .bottom-left {
-    font-size: 18px;
-  }*/
-}
-
-@media screen and (max-width: 642px) {
   .footer {
     display: grid;
   }
   .footer-heading-footer-3 {
     margin-top: 0;
   }
+/*  .bottom-left {
+    font-size: 18px;
+  }*/
 }
 
 @media screen and (max-width: 630px) {
