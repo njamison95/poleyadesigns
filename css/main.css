@@ -431,8 +431,19 @@ p {
   height: auto;
 }
 
+.logo-breakdown {
+  width: 70%;
+  height: auto;
+  margin: 0px auto;
+  margin-bottom: 8vw;
+}
+.logo-breakdown img {
+  width: 100%;
+  height: auto;
+}
+
 .text {
-  margin: 175px 10% 195px 10%;
+  margin: 8vw 10% 8vw 10%;
   max-width: 550px;
   /*background-color: blue;*/
 }
@@ -1026,6 +1037,9 @@ a:active {
   }
   ul {
     font-size: 16px;
+  }
+  .logo-breakdown {
+    width: 95%;
   }
 }
 
