@@ -124,7 +124,7 @@ nav {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .menu-item:hover .dropbtn {
-  text-decoration: underline 1px;
+  text-decoration: underline 2px;
   color: #403282;
   transition: 0.4s ease;
 }
@@ -187,6 +187,9 @@ h1 {
 .grid-item {
   transition: 0.4s ease;
   /*background-color: red;*/
+}
+.grid-item:hover {
+
 }
 .featured-img-wrap {
   width: 100%;
