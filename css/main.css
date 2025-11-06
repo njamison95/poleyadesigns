@@ -327,7 +327,18 @@ h3 {
   margin-bottom: 10px;
   color: #1D1F5A;
 }
+#poleya-values {
+  font-family: "rubik", sans-serif;
+  font-weight: 700;
+  margin-bottom: 40px;
 
+}
+#caldwell-values {
+  font-family: "Besley", serif;
+  font-weight: 900;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
 h4 {
   font-family: "gantari", sans-serif;
   font-weight: 500;
