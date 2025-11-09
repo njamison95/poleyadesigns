@@ -221,7 +221,12 @@ h1 {
   object-fit: cover;
   border-radius: 3px;
 }
-
+.featured-img-wrap video {
+  width: 100%;
+  height: 30vw;
+  border-radius: 3px;
+  /*background-color: blue;*/
+}
 .grid-item h3 {
   font-size: 23px;
   font-family: "gantari", sans-serif;
@@ -399,6 +404,10 @@ p {
   margin: 0px auto;
 }
 .full img {
+  width: 100%;
+  height: auto;
+}
+.grad-reel-desktop {
   width: 100%;
   height: auto;
 }
